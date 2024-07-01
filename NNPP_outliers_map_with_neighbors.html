@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4f7a080a7623035c2f8f50919106b30d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4f7a080a7623035c2f8f50919106b30d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4f7a080a7623035c2f8f50919106b30d = L.map(
+                "map_4f7a080a7623035c2f8f50919106b30d",
+                {
+                    center: [9.45972717849711, 9.25057424617341],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_059ca451dabfa6a52c6ff76081eef637 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4f7a080a7623035c2f8f50919106b30d);
+        
+    
+            var marker_cluster_2e61d436c9194076256d9a94f14c4e6c = L.markerClusterGroup(
+                {}
+            );
+            map_4f7a080a7623035c2f8f50919106b30d.addLayer(marker_cluster_2e61d436c9194076256d9a94f14c4e6c);
+        
+    
+            var marker_25d0ec437a2f048740ce4b9dfc9db407 = L.marker(
+                [9.1042938, 9.9073986],
+                {}
+            ).addTo(marker_cluster_2e61d436c9194076256d9a94f14c4e6c);
+        
+    
+            var icon_b0ccb684f9dd3efa2c1fa08f462ff403 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_25d0ec437a2f048740ce4b9dfc9db407.setIcon(icon_b0ccb684f9dd3efa2c1fa08f462ff403);
+        
+    
+        var popup_045b56cdb600fbee541b03e20256a2d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f027fa2f8d69db89008b153f4b442f5 = $(`<div id="html_4f027fa2f8d69db89008b153f4b442f5" style="width: 100.0%; height: 100.0%;">LEA ZAM - AIRPORT (104 votes, Outlier Score: 92.22222222222223)</div>`)[0];
+                popup_045b56cdb600fbee541b03e20256a2d5.setContent(html_4f027fa2f8d69db89008b153f4b442f5);
+            
+        
+
+        marker_25d0ec437a2f048740ce4b9dfc9db407.bindPopup(popup_045b56cdb600fbee541b03e20256a2d5)
+        ;
+
+        
+    
+    
+            var marker_b9a9e213993971ffb75f8a2eed26f504 = L.marker(
+                [9.1042938, 9.9073986],
+                {}
+            ).addTo(marker_cluster_2e61d436c9194076256d9a94f14c4e6c);
+        
+    
+            var icon_267d066a1a6c6129e85207c2a3504e94 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b9a9e213993971ffb75f8a2eed26f504.setIcon(icon_267d066a1a6c6129e85207c2a3504e94);
+        
+    
+        var popup_834d4ca601af1ecf53f30d1f47f4c643 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_585f9a9e2b8ce08ecec892e44395e37d = $(`<div id="html_585f9a9e2b8ce08ecec892e44395e37d" style="width: 100.0%; height: 100.0%;">GONGANI (0 votes, Outlier Score: 11.777777777777779)</div>`)[0];
+                popup_834d4ca601af1ecf53f30d1f47f4c643.setContent(html_585f9a9e2b8ce08ecec892e44395e37d);
+            
+        
+
+        marker_b9a9e213993971ffb75f8a2eed26f504.bindPopup(popup_834d4ca601af1ecf53f30d1f47f4c643)
+        ;
+
+        
+    
+    
+            var marker_a948fef3f926b9383e98309b3d9c8853 = L.marker(
+                [9.1042938, 9.9073986],
+                {}
+            ).addTo(marker_cluster_2e61d436c9194076256d9a94f14c4e6c);
+        
+    
+            var icon_8c78c5651285645a3d1485e9cde8fadd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a948fef3f926b9383e98309b3d9c8853.setIcon(icon_8c78c5651285645a3d1485e9cde8fadd);
+        
+    
+        var popup_a34e9e68d7f5ed9fd964dd39120abe01 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e677c8cff43d6be482b92cd3a8a0be96 = $(`<div id="html_e677c8cff43d6be482b92cd3a8a0be96" style="width: 100.0%; height: 100.0%;">PISHE (0 votes, Outlier Score: 11.777777777777779)</div>`)[0];
+                popup_a34e9e68d7f5ed9fd964dd39120abe01.setContent(html_e677c8cff43d6be482b92cd3a8a0be96);
+            
+        
+
+        marker_a948fef3f926b9383e98309b3d9c8853.bindPopup(popup_a34e9e68d7f5ed9fd964dd39120abe01)
+        ;
+
+        
+    
+    
+            var marker_e8ad8435c33b0573284167c7f1ee6fb4 = L.marker(
+                [9.1042938, 9.9073986],
+                {}
+            ).addTo(marker_cluster_2e61d436c9194076256d9a94f14c4e6c);
+        
+    
+            var icon_e16dcf7cbc3967e4587216b98fe8669a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e8ad8435c33b0573284167c7f1ee6fb4.setIcon(icon_e16dcf7cbc3967e4587216b98fe8669a);
+        
+    
+        var popup_95431642ac3e36b880cc91ed2cd9f7ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7cd1ba544ee6de853018186d91784b6 = $(`<div id="html_e7cd1ba544ee6de853018186d91784b6" style="width: 100.0%; height: 100.0%;">ZAMADEDE (0 votes, Outlier Score: 11.777777777777779)</div>`)[0];
+                popup_95431642ac3e36b880cc91ed2cd9f7ee.setContent(html_e7cd1ba544ee6de853018186d91784b6);
+            
+        
+
+        marker_e8ad8435c33b0573284167c7f1ee6fb4.bindPopup(popup_95431642ac3e36b880cc91ed2cd9f7ee)
+        ;
+
+        
+    
+    
+            var marker_babf104a3d4b6efed90a706e675e713a = L.marker(
+                [9.1042938, 9.9073986],
+                {}
+            ).addTo(marker_cluster_2e61d436c9194076256d9a94f14c4e6c);
+        
+    
+            var icon_0b9d0185d38d3ee5f1fb2a416896b2d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_babf104a3d4b6efed90a706e675e713a.setIcon(icon_0b9d0185d38d3ee5f1fb2a416896b2d0);
+        
+    
+        var popup_594e685a9c9e524c0fe0a29e4e7b6560 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bea9f8f86454fd79d58b0d2d681dc518 = $(`<div id="html_bea9f8f86454fd79d58b0d2d681dc518" style="width: 100.0%; height: 100.0%;">YASHI I (0 votes, Outlier Score: 11.777777777777779)</div>`)[0];
+                popup_594e685a9c9e524c0fe0a29e4e7b6560.setContent(html_bea9f8f86454fd79d58b0d2d681dc518);
+            
+        
+
+        marker_babf104a3d4b6efed90a706e675e713a.bindPopup(popup_594e685a9c9e524c0fe0a29e4e7b6560)
+        ;
+
+        
+    
+    
+            var marker_aaab5554569d33cfb9a837d41b129458 = L.marker(
+                [9.1042938, 9.9073986],
+                {}
+            ).addTo(marker_cluster_2e61d436c9194076256d9a94f14c4e6c);
+        
+    
+            var icon_4c46cede63d2aee3c786f2479f881a14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_aaab5554569d33cfb9a837d41b129458.setIcon(icon_4c46cede63d2aee3c786f2479f881a14);
+        
+    
+        var popup_d9c71dbca41d0c38ee633c602ceffadb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8105d3e45cb3c7ab7bd94e43d8bb357 = $(`<div id="html_b8105d3e45cb3c7ab7bd94e43d8bb357" style="width: 100.0%; height: 100.0%;">YASHI II (1 votes, Outlier Score: 10.777777777777779)</div>`)[0];
+                popup_d9c71dbca41d0c38ee633c602ceffadb.setContent(html_b8105d3e45cb3c7ab7bd94e43d8bb357);
+            
+        
+
+        marker_aaab5554569d33cfb9a837d41b129458.bindPopup(popup_d9c71dbca41d0c38ee633c602ceffadb)
+        ;
+
+        
+    
+    
+            var marker_8ca2d9da4f2590112dcd20a172ac997d = L.marker(
+                [9.1042938, 9.9073986],
+                {}
+            ).addTo(marker_cluster_2e61d436c9194076256d9a94f14c4e6c);
+        
+    
+            var icon_baa2522c473582782130ce4fbb2c19b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8ca2d9da4f2590112dcd20a172ac997d.setIcon(icon_baa2522c473582782130ce4fbb2c19b2);
+        
+    
+        var popup_7be7be5148cc6f6e6b92e0df9b29dbd4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98fee0c154d782bd4f89a415ac38233c = $(`<div id="html_98fee0c154d782bd4f89a415ac38233c" style="width: 100.0%; height: 100.0%;">ZAMADEDE II (0 votes, Outlier Score: 11.777777777777779)</div>`)[0];
+                popup_7be7be5148cc6f6e6b92e0df9b29dbd4.setContent(html_98fee0c154d782bd4f89a415ac38233c);
+            
+        
+
+        marker_8ca2d9da4f2590112dcd20a172ac997d.bindPopup(popup_7be7be5148cc6f6e6b92e0df9b29dbd4)
+        ;
+
+        
+    
+    
+            var marker_6e576b95e61f41f2b07f2169b27da013 = L.marker(
+                [9.1042938, 9.9073986],
+                {}
+            ).addTo(marker_cluster_2e61d436c9194076256d9a94f14c4e6c);
+        
+    
+            var icon_02641353112a89978a39fbe47a84b49d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6e576b95e61f41f2b07f2169b27da013.setIcon(icon_02641353112a89978a39fbe47a84b49d);
+        
+    
+        var popup_5e716cb39a98da3524c5808bc7b0febf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_772e7e98c0f22f8f6e96c23a4f0a2696 = $(`<div id="html_772e7e98c0f22f8f6e96c23a4f0a2696" style="width: 100.0%; height: 100.0%;">YASHI MARKET (0 votes, Outlier Score: 11.777777777777779)</div>`)[0];
+                popup_5e716cb39a98da3524c5808bc7b0febf.setContent(html_772e7e98c0f22f8f6e96c23a4f0a2696);
+            
+        
+
+        marker_6e576b95e61f41f2b07f2169b27da013.bindPopup(popup_5e716cb39a98da3524c5808bc7b0febf)
+        ;
+
+        
+    
+    
+            var marker_50bcaa1a80bc2fcf1ea4d5d710890a07 = L.marker(
+                [9.1042938, 9.9073986],
+                {}
+            ).addTo(marker_cluster_2e61d436c9194076256d9a94f14c4e6c);
+        
+    
+            var icon_c27359e133571f092d27f7553ae0da39 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_50bcaa1a80bc2fcf1ea4d5d710890a07.setIcon(icon_c27359e133571f092d27f7553ae0da39);
+        
+    
+        var popup_3499ad73c8ee71b4394aac8066c882f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d4429b03de56f8777ec77024a1555b2 = $(`<div id="html_4d4429b03de56f8777ec77024a1555b2" style="width: 100.0%; height: 100.0%;">LEA ZAM - AIRPORT (104 votes, Outlier Score: 92.22222222222223)</div>`)[0];
+                popup_3499ad73c8ee71b4394aac8066c882f3.setContent(html_4d4429b03de56f8777ec77024a1555b2);
+            
+        
+
+        marker_50bcaa1a80bc2fcf1ea4d5d710890a07.bindPopup(popup_3499ad73c8ee71b4394aac8066c882f3)
+        ;
+
+        
+    
+    
+            var marker_45d2dc085453fb6d637979449bf8da4c = L.marker(
+                [9.1042938, 9.9073986],
+                {}
+            ).addTo(marker_cluster_2e61d436c9194076256d9a94f14c4e6c);
+        
+    
+            var icon_a45252d71d577631310570271199926a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_45d2dc085453fb6d637979449bf8da4c.setIcon(icon_a45252d71d577631310570271199926a);
+        
+    
+        var popup_aa98ec543cd3b9f84326d6c0ebd06138 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e94f89c7062d16f32e9d65d227df657b = $(`<div id="html_e94f89c7062d16f32e9d65d227df657b" style="width: 100.0%; height: 100.0%;">PISHE MARKET (1 votes, Outlier Score: 10.777777777777779)</div>`)[0];
+                popup_aa98ec543cd3b9f84326d6c0ebd06138.setContent(html_e94f89c7062d16f32e9d65d227df657b);
+            
+        
+
+        marker_45d2dc085453fb6d637979449bf8da4c.bindPopup(popup_aa98ec543cd3b9f84326d6c0ebd06138)
+        ;
+
+        
+    
+    
+            var marker_ba0447540ee3dbf9a8eb9d6bdd6a71cd = L.marker(
+                [9.0388433, 9.7009754],
+                {}
+            ).addTo(marker_cluster_2e61d436c9194076256d9a94f14c4e6c);
+        
+    
+            var icon_87b48382827b537836fb3d05fc7ebecf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ba0447540ee3dbf9a8eb9d6bdd6a71cd.setIcon(icon_87b48382827b537836fb3d05fc7ebecf);
+        
+    
+        var popup_4e45c2f1be333e131a632004cb4115a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f97a4ec9cf7acd7b97ee13a543d4222 = $(`<div id="html_0f97a4ec9cf7acd7b97ee13a543d4222" style="width: 100.0%; height: 100.0%;">KONGUNG (110 votes, Outlier Score: 87.2)</div>`)[0];
+                popup_4e45c2f1be333e131a632004cb4115a0.setContent(html_0f97a4ec9cf7acd7b97ee13a543d4222);
+            
+        
+
+        marker_ba0447540ee3dbf9a8eb9d6bdd6a71cd.bindPopup(popup_4e45c2f1be333e131a632004cb4115a0)
+        ;
+
+        
+    
+    
+            var marker_c532c0765add65798cc48f8a472002e6 = L.marker(
+                [9.0388433, 9.7009754],
+                {}
+            ).addTo(marker_cluster_2e61d436c9194076256d9a94f14c4e6c);
+        
+    
+            var icon_21556c1afca69c83539d4bc893fce279 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c532c0765add65798cc48f8a472002e6.setIcon(icon_21556c1afca69c83539d4bc893fce279);
+        
+    
+        var popup_dd91fcee41503d06627f5899c2656c7a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b869a75b3e58a615644601ea4e85a717 = $(`<div id="html_b869a75b3e58a615644601ea4e85a717" style="width: 100.0%; height: 100.0%;">KONGUNG (110 votes, Outlier Score: 87.2)</div>`)[0];
+                popup_dd91fcee41503d06627f5899c2656c7a.setContent(html_b869a75b3e58a615644601ea4e85a717);
+            
+        
+
+        marker_c532c0765add65798cc48f8a472002e6.bindPopup(popup_dd91fcee41503d06627f5899c2656c7a)
+        ;
+
+        
+    
+    
+            var marker_4b583023852ba08a483dc5812e93689a = L.marker(
+                [9.0388433, 9.7009754],
+                {}
+            ).addTo(marker_cluster_2e61d436c9194076256d9a94f14c4e6c);
+        
+    
+            var icon_a7777477bf08a3a7f79f89b65ace5838 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4b583023852ba08a483dc5812e93689a.setIcon(icon_a7777477bf08a3a7f79f89b65ace5838);
+        
+    
+        var popup_73314a7ea253f8c4f7539da754a82ba9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e4d511c34ea71806156b21ce1c51dd4 = $(`<div id="html_9e4d511c34ea71806156b21ce1c51dd4" style="width: 100.0%; height: 100.0%;">LALIN PRY. SCH. I (1 votes, Outlier Score: 21.8)</div>`)[0];
+                popup_73314a7ea253f8c4f7539da754a82ba9.setContent(html_9e4d511c34ea71806156b21ce1c51dd4);
+            
+        
+
+        marker_4b583023852ba08a483dc5812e93689a.bindPopup(popup_73314a7ea253f8c4f7539da754a82ba9)
+        ;
+
+        
+    
+    
+            var marker_02390e5e5220c3a3888edf87510640c0 = L.marker(
+                [9.0388433, 9.7009754],
+                {}
+            ).addTo(marker_cluster_2e61d436c9194076256d9a94f14c4e6c);
+        
+    
+            var icon_8c5408435a18fe05b19773ccfc18ea41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_02390e5e5220c3a3888edf87510640c0.setIcon(icon_8c5408435a18fe05b19773ccfc18ea41);
+        
+    
+        var popup_9cfc7db4eed640d4576575dbd9ed538c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_07d94f63e3d5a268b955215ed4c25832 = $(`<div id="html_07d94f63e3d5a268b955215ed4c25832" style="width: 100.0%; height: 100.0%;">GABIET (0 votes, Outlier Score: 22.8)</div>`)[0];
+                popup_9cfc7db4eed640d4576575dbd9ed538c.setContent(html_07d94f63e3d5a268b955215ed4c25832);
+            
+        
+
+        marker_02390e5e5220c3a3888edf87510640c0.bindPopup(popup_9cfc7db4eed640d4576575dbd9ed538c)
+        ;
+
+        
+    
+    
+            var marker_1172b4de159495df61569025461a72f8 = L.marker(
+                [9.0388433, 9.7009754],
+                {}
+            ).addTo(marker_cluster_2e61d436c9194076256d9a94f14c4e6c);
+        
+    
+            var icon_eaa1fc53fe14c5476d1babbc7a7923c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1172b4de159495df61569025461a72f8.setIcon(icon_eaa1fc53fe14c5476d1babbc7a7923c2);
+        
+    
+        var popup_58d0460415e18308dbc61363a7c4ccb2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_49598b5c4a6338374eab6712d16d0ade = $(`<div id="html_49598b5c4a6338374eab6712d16d0ade" style="width: 100.0%; height: 100.0%;">MUANPUS (3 votes, Outlier Score: 19.8)</div>`)[0];
+                popup_58d0460415e18308dbc61363a7c4ccb2.setContent(html_49598b5c4a6338374eab6712d16d0ade);
+            
+        
+
+        marker_1172b4de159495df61569025461a72f8.bindPopup(popup_58d0460415e18308dbc61363a7c4ccb2)
+        ;
+
+        
+    
+    
+            var marker_8c08e882c0675ddde35cbb15cabe07d5 = L.marker(
+                [9.0388433, 9.7009754],
+                {}
+            ).addTo(marker_cluster_2e61d436c9194076256d9a94f14c4e6c);
+        
+    
+            var icon_d7d622670f5b51b171442083f1c4294c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8c08e882c0675ddde35cbb15cabe07d5.setIcon(icon_d7d622670f5b51b171442083f1c4294c);
+        
+    
+        var popup_61da5f214190ce0682986b8019c13c63 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_570a1c51108ba7b27e837ac9666b087b = $(`<div id="html_570a1c51108ba7b27e837ac9666b087b" style="width: 100.0%; height: 100.0%;">LAKAI (0 votes, Outlier Score: 22.8)</div>`)[0];
+                popup_61da5f214190ce0682986b8019c13c63.setContent(html_570a1c51108ba7b27e837ac9666b087b);
+            
+        
+
+        marker_8c08e882c0675ddde35cbb15cabe07d5.bindPopup(popup_61da5f214190ce0682986b8019c13c63)
+        ;
+
+        
+    
+    
+            var marker_527c2a6cb4d864c81d82279a70e47300 = L.marker(
+                [9.7684607, 8.6820636],
+                {}
+            ).addTo(marker_cluster_2e61d436c9194076256d9a94f14c4e6c);
+        
+    
+            var icon_eff5fa133bdfebab7739aabf4ad84373 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_527c2a6cb4d864c81d82279a70e47300.setIcon(icon_eff5fa133bdfebab7739aabf4ad84373);
+        
+    
+        var popup_804bc156f2d341ead359923d8155b5a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5483dbd3d80766a2bb62c8a7f1e6ad0b = $(`<div id="html_5483dbd3d80766a2bb62c8a7f1e6ad0b" style="width: 100.0%; height: 100.0%;">DAN MANGU  II (94 votes, Outlier Score: 85.45454545454545)</div>`)[0];
+                popup_804bc156f2d341ead359923d8155b5a9.setContent(html_5483dbd3d80766a2bb62c8a7f1e6ad0b);
+            
+        
+
+        marker_527c2a6cb4d864c81d82279a70e47300.bindPopup(popup_804bc156f2d341ead359923d8155b5a9)
+        ;
+
+        
+    
+    
+            var marker_f87e16803de9f4fd292a16ef06bab180 = L.marker(
+                [9.7684607, 8.6820636],
+                {}
+            ).addTo(marker_cluster_2e61d436c9194076256d9a94f14c4e6c);
+        
+    
+            var icon_0c5b7cb8e5b66f2550766e1070bc72a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f87e16803de9f4fd292a16ef06bab180.setIcon(icon_0c5b7cb8e5b66f2550766e1070bc72a5);
+        
+    
+        var popup_6d8d366c265ac221c841c8716cf16b4e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b7a9bf2e8e6d764e5196834fe225a98c = $(`<div id="html_b7a9bf2e8e6d764e5196834fe225a98c" style="width: 100.0%; height: 100.0%;">ORREE DAM (0 votes, Outlier Score: 8.545454545454545)</div>`)[0];
+                popup_6d8d366c265ac221c841c8716cf16b4e.setContent(html_b7a9bf2e8e6d764e5196834fe225a98c);
+            
+        
+
+        marker_f87e16803de9f4fd292a16ef06bab180.bindPopup(popup_6d8d366c265ac221c841c8716cf16b4e)
+        ;
+
+        
+    
+    
+            var marker_36b27bc9fd4b217e3c37ef71b788e177 = L.marker(
+                [9.7684607, 8.6820636],
+                {}
+            ).addTo(marker_cluster_2e61d436c9194076256d9a94f14c4e6c);
+        
+    
+            var icon_0b6b68ea49fddf2cfa6b2922898e8cc3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_36b27bc9fd4b217e3c37ef71b788e177.setIcon(icon_0b6b68ea49fddf2cfa6b2922898e8cc3);
+        
+    
+        var popup_a663e66be1718b33851732d2463c5704 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2091e5b9fb7cf7e379650c0c8643bec6 = $(`<div id="html_2091e5b9fb7cf7e379650c0c8643bec6" style="width: 100.0%; height: 100.0%;">TINJE I (0 votes, Outlier Score: 8.545454545454545)</div>`)[0];
+                popup_a663e66be1718b33851732d2463c5704.setContent(html_2091e5b9fb7cf7e379650c0c8643bec6);
+            
+        
+
+        marker_36b27bc9fd4b217e3c37ef71b788e177.bindPopup(popup_a663e66be1718b33851732d2463c5704)
+        ;
+
+        
+    
+    
+            var marker_54d9240da5f5dc25601a59b243786177 = L.marker(
+                [9.7684607, 8.6820636],
+                {}
+            ).addTo(marker_cluster_2e61d436c9194076256d9a94f14c4e6c);
+        
+    
+            var icon_fd78d5cb745c40c4f865844590fb6aed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_54d9240da5f5dc25601a59b243786177.setIcon(icon_fd78d5cb745c40c4f865844590fb6aed);
+        
+    
+        var popup_907ec21f87e33bbbd2c408ba8cecab85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e0b92a13fac27d5d31603bf6bb5c9c1a = $(`<div id="html_e0b92a13fac27d5d31603bf6bb5c9c1a" style="width: 100.0%; height: 100.0%;">DAN MANGU ZODU (0 votes, Outlier Score: 8.545454545454545)</div>`)[0];
+                popup_907ec21f87e33bbbd2c408ba8cecab85.setContent(html_e0b92a13fac27d5d31603bf6bb5c9c1a);
+            
+        
+
+        marker_54d9240da5f5dc25601a59b243786177.bindPopup(popup_907ec21f87e33bbbd2c408ba8cecab85)
+        ;
+
+        
+    
+    
+            var marker_6923216dd496c9d9288357c4587e554d = L.marker(
+                [9.7684607, 8.6820636],
+                {}
+            ).addTo(marker_cluster_2e61d436c9194076256d9a94f14c4e6c);
+        
+    
+            var icon_31747bfa28231c2ad638e3cdc9d87d95 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6923216dd496c9d9288357c4587e554d.setIcon(icon_31747bfa28231c2ad638e3cdc9d87d95);
+        
+    
+        var popup_c88e702f48c1ba4bf60ccfe6cc9c0d86 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c49c8a0d6646d884994e30cf971425a = $(`<div id="html_6c49c8a0d6646d884994e30cf971425a" style="width: 100.0%; height: 100.0%;">TINJE II (0 votes, Outlier Score: 8.545454545454545)</div>`)[0];
+                popup_c88e702f48c1ba4bf60ccfe6cc9c0d86.setContent(html_6c49c8a0d6646d884994e30cf971425a);
+            
+        
+
+        marker_6923216dd496c9d9288357c4587e554d.bindPopup(popup_c88e702f48c1ba4bf60ccfe6cc9c0d86)
+        ;
+
+        
+    
+    
+            var marker_2f894a7c44e05d9fb2b935db5c98a1a7 = L.marker(
+                [9.7684607, 8.6820636],
+                {}
+            ).addTo(marker_cluster_2e61d436c9194076256d9a94f14c4e6c);
+        
+    
+            var icon_d4cf6e579b5fba6faff6832d61c3d9db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2f894a7c44e05d9fb2b935db5c98a1a7.setIcon(icon_d4cf6e579b5fba6faff6832d61c3d9db);
+        
+    
+        var popup_0b238158db21dec3e9237064bfc7c644 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c3db53cab33237c006aa7ce28d598f7 = $(`<div id="html_9c3db53cab33237c006aa7ce28d598f7" style="width: 100.0%; height: 100.0%;">DUNDU (0 votes, Outlier Score: 8.545454545454545)</div>`)[0];
+                popup_0b238158db21dec3e9237064bfc7c644.setContent(html_9c3db53cab33237c006aa7ce28d598f7);
+            
+        
+
+        marker_2f894a7c44e05d9fb2b935db5c98a1a7.bindPopup(popup_0b238158db21dec3e9237064bfc7c644)
+        ;
+
+        
+    
+    
+            var marker_67723138f2e9c691dc01714b743704d9 = L.marker(
+                [9.7684607, 8.6820636],
+                {}
+            ).addTo(marker_cluster_2e61d436c9194076256d9a94f14c4e6c);
+        
+    
+            var icon_63ae974330a61e5112839faa34b1ece9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_67723138f2e9c691dc01714b743704d9.setIcon(icon_63ae974330a61e5112839faa34b1ece9);
+        
+    
+        var popup_5f2025c8c3aff778c4d81f374a6f9c4f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c275e6f852e0040d79176563e90f8da3 = $(`<div id="html_c275e6f852e0040d79176563e90f8da3" style="width: 100.0%; height: 100.0%;">DAN MANGU  II (94 votes, Outlier Score: 85.45454545454545)</div>`)[0];
+                popup_5f2025c8c3aff778c4d81f374a6f9c4f.setContent(html_c275e6f852e0040d79176563e90f8da3);
+            
+        
+
+        marker_67723138f2e9c691dc01714b743704d9.bindPopup(popup_5f2025c8c3aff778c4d81f374a6f9c4f)
+        ;
+
+        
+    
+    
+            var marker_ee1516699fcc610c7c8f9642e5016b7e = L.marker(
+                [9.7684607, 8.6820636],
+                {}
+            ).addTo(marker_cluster_2e61d436c9194076256d9a94f14c4e6c);
+        
+    
+            var icon_e3168beb8547df4c40231122a256267d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ee1516699fcc610c7c8f9642e5016b7e.setIcon(icon_e3168beb8547df4c40231122a256267d);
+        
+    
+        var popup_783d85dddc10cb80e4a4a7bfe7f728e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ee116b7c33f32d13d541d8cf2bc7a20 = $(`<div id="html_6ee116b7c33f32d13d541d8cf2bc7a20" style="width: 100.0%; height: 100.0%;">DAN MANGU  III (0 votes, Outlier Score: 8.545454545454545)</div>`)[0];
+                popup_783d85dddc10cb80e4a4a7bfe7f728e7.setContent(html_6ee116b7c33f32d13d541d8cf2bc7a20);
+            
+        
+
+        marker_ee1516699fcc610c7c8f9642e5016b7e.bindPopup(popup_783d85dddc10cb80e4a4a7bfe7f728e7)
+        ;
+
+        
+    
+    
+            var marker_1cc1420e80f2b3b53725b9032a2f0e05 = L.marker(
+                [9.7684607, 8.6820636],
+                {}
+            ).addTo(marker_cluster_2e61d436c9194076256d9a94f14c4e6c);
+        
+    
+            var icon_0099eb05e0eba59b96ca083c3ea09cf2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1cc1420e80f2b3b53725b9032a2f0e05.setIcon(icon_0099eb05e0eba59b96ca083c3ea09cf2);
+        
+    
+        var popup_9ff9f1f75124cf0c3f68586fb82ebbe7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e3b3f3c9572721394611668a19765d8 = $(`<div id="html_7e3b3f3c9572721394611668a19765d8" style="width: 100.0%; height: 100.0%;">TEBRA TINJE (0 votes, Outlier Score: 8.545454545454545)</div>`)[0];
+                popup_9ff9f1f75124cf0c3f68586fb82ebbe7.setContent(html_7e3b3f3c9572721394611668a19765d8);
+            
+        
+
+        marker_1cc1420e80f2b3b53725b9032a2f0e05.bindPopup(popup_9ff9f1f75124cf0c3f68586fb82ebbe7)
+        ;
+
+        
+    
+    
+            var marker_b6ae191e7c14fc4ea043cc6ff21f20fd = L.marker(
+                [9.7684607, 8.6820636],
+                {}
+            ).addTo(marker_cluster_2e61d436c9194076256d9a94f14c4e6c);
+        
+    
+            var icon_96c5a8401f99c546221ff777f54bca85 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b6ae191e7c14fc4ea043cc6ff21f20fd.setIcon(icon_96c5a8401f99c546221ff777f54bca85);
+        
+    
+        var popup_d545ae07c79b143e0979153ee1460803 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0cb4da712cb5664f661f3eb990a644a0 = $(`<div id="html_0cb4da712cb5664f661f3eb990a644a0" style="width: 100.0%; height: 100.0%;">ZIKKE (0 votes, Outlier Score: 8.545454545454545)</div>`)[0];
+                popup_d545ae07c79b143e0979153ee1460803.setContent(html_0cb4da712cb5664f661f3eb990a644a0);
+            
+        
+
+        marker_b6ae191e7c14fc4ea043cc6ff21f20fd.bindPopup(popup_d545ae07c79b143e0979153ee1460803)
+        ;
+
+        
+    
+    
+            var marker_b3560e2295b86b00f1617e2334606375 = L.marker(
+                [9.7684607, 8.6820636],
+                {}
+            ).addTo(marker_cluster_2e61d436c9194076256d9a94f14c4e6c);
+        
+    
+            var icon_efab3b37046ef8b2b8df94f684d0e287 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b3560e2295b86b00f1617e2334606375.setIcon(icon_efab3b37046ef8b2b8df94f684d0e287);
+        
+    
+        var popup_ab7230336c9f52100141f8d8b61ef244 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_408cceb652c544750cf9fa5bc1f392e9 = $(`<div id="html_408cceb652c544750cf9fa5bc1f392e9" style="width: 100.0%; height: 100.0%;">ZASHI ADU (0 votes, Outlier Score: 8.545454545454545)</div>`)[0];
+                popup_ab7230336c9f52100141f8d8b61ef244.setContent(html_408cceb652c544750cf9fa5bc1f392e9);
+            
+        
+
+        marker_b3560e2295b86b00f1617e2334606375.bindPopup(popup_ab7230336c9f52100141f8d8b61ef244)
+        ;
+
+        
+    
+    
+            var marker_f5300dc57e0ae789676850b8a6681099 = L.marker(
+                [9.7684607, 8.6820636],
+                {}
+            ).addTo(marker_cluster_2e61d436c9194076256d9a94f14c4e6c);
+        
+    
+            var icon_d1870af2174d7cdce7869f832ac83bae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f5300dc57e0ae789676850b8a6681099.setIcon(icon_d1870af2174d7cdce7869f832ac83bae);
+        
+    
+        var popup_c9c2ff6ddec4cf8300c7e351a95479b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e6817544e7d3865c9b885dffe99d6beb = $(`<div id="html_e6817544e7d3865c9b885dffe99d6beb" style="width: 100.0%; height: 100.0%;">ANGWAN DAUDU (0 votes, Outlier Score: 8.545454545454545)</div>`)[0];
+                popup_c9c2ff6ddec4cf8300c7e351a95479b7.setContent(html_e6817544e7d3865c9b885dffe99d6beb);
+            
+        
+
+        marker_f5300dc57e0ae789676850b8a6681099.bindPopup(popup_c9c2ff6ddec4cf8300c7e351a95479b7)
+        ;
+
+        
+    
+</script>
+</html>

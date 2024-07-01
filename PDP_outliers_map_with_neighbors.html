@@ -1,0 +1,3885 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_28b7cd14928639f2b05bc5ae20b0cdad {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_28b7cd14928639f2b05bc5ae20b0cdad" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_28b7cd14928639f2b05bc5ae20b0cdad = L.map(
+                "map_28b7cd14928639f2b05bc5ae20b0cdad",
+                {
+                    center: [9.45972717849711, 9.25057424617341],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2b79186dd989ee587f823917d9f6576f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_28b7cd14928639f2b05bc5ae20b0cdad);
+        
+    
+            var marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4 = L.markerClusterGroup(
+                {}
+            );
+            map_28b7cd14928639f2b05bc5ae20b0cdad.addLayer(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var marker_0838a050354649cd5e13c16df542f36f = L.marker(
+                [8.8275324, 9.4339343],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_322e43049666c970fc0878e19e391fd9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0838a050354649cd5e13c16df542f36f.setIcon(icon_322e43049666c970fc0878e19e391fd9);
+        
+    
+        var popup_90724f0d4b6cfe36d3992db30a9afef0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c9b2dc349efb982dfff45a6751fdb0d = $(`<div id="html_2c9b2dc349efb982dfff45a6751fdb0d" style="width: 100.0%; height: 100.0%;">BAKIN KOGI PRY. SCH II (519 votes, Outlier Score: 466.4090909090909)</div>`)[0];
+                popup_90724f0d4b6cfe36d3992db30a9afef0.setContent(html_2c9b2dc349efb982dfff45a6751fdb0d);
+            
+        
+
+        marker_0838a050354649cd5e13c16df542f36f.bindPopup(popup_90724f0d4b6cfe36d3992db30a9afef0)
+        ;
+
+        
+    
+    
+            var marker_f9efd808072c6934aefbfeb76d9c2a05 = L.marker(
+                [8.8275324, 9.4339343],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_d4d602ee0287a4182f9e5d1cc83765ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f9efd808072c6934aefbfeb76d9c2a05.setIcon(icon_d4d602ee0287a4182f9e5d1cc83765ce);
+        
+    
+        var popup_790e085a28f8bf4349b2e7095f14e4df = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a646fc05a7ac9fcad9da2c7784e09a90 = $(`<div id="html_a646fc05a7ac9fcad9da2c7784e09a90" style="width: 100.0%; height: 100.0%;">NTUER I (36 votes, Outlier Score: 16.590909090909093)</div>`)[0];
+                popup_790e085a28f8bf4349b2e7095f14e4df.setContent(html_a646fc05a7ac9fcad9da2c7784e09a90);
+            
+        
+
+        marker_f9efd808072c6934aefbfeb76d9c2a05.bindPopup(popup_790e085a28f8bf4349b2e7095f14e4df)
+        ;
+
+        
+    
+    
+            var marker_353c61e332d582599fb0f3c08d6b4331 = L.marker(
+                [8.8275324, 9.4339343],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_b740a8d0a96cd7c8085db78d3e420cdb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_353c61e332d582599fb0f3c08d6b4331.setIcon(icon_b740a8d0a96cd7c8085db78d3e420cdb);
+        
+    
+        var popup_02081912ca18cdb5e5cdcffa6fd225aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99ec6e1ce42fef0d3b29c63e75a0775d = $(`<div id="html_99ec6e1ce42fef0d3b29c63e75a0775d" style="width: 100.0%; height: 100.0%;">SHANLANG (64 votes, Outlier Score: 11.409090909090907)</div>`)[0];
+                popup_02081912ca18cdb5e5cdcffa6fd225aa.setContent(html_99ec6e1ce42fef0d3b29c63e75a0775d);
+            
+        
+
+        marker_353c61e332d582599fb0f3c08d6b4331.bindPopup(popup_02081912ca18cdb5e5cdcffa6fd225aa)
+        ;
+
+        
+    
+    
+            var marker_e686562500b197a481b44f116307b028 = L.marker(
+                [8.8275324, 9.4339343],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_73f56364c37f623d7bfe06892cd46ba4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e686562500b197a481b44f116307b028.setIcon(icon_73f56364c37f623d7bfe06892cd46ba4);
+        
+    
+        var popup_ce931cc2e9572ef96e0d2d894dee10e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67dd6049836892290da9c00317bf1d89 = $(`<div id="html_67dd6049836892290da9c00317bf1d89" style="width: 100.0%; height: 100.0%;">SHANLANG (0 votes, Outlier Score: 52.59090909090909)</div>`)[0];
+                popup_ce931cc2e9572ef96e0d2d894dee10e7.setContent(html_67dd6049836892290da9c00317bf1d89);
+            
+        
+
+        marker_e686562500b197a481b44f116307b028.bindPopup(popup_ce931cc2e9572ef96e0d2d894dee10e7)
+        ;
+
+        
+    
+    
+            var marker_f94f8a14da4e37ba194ad6c7f2100a0c = L.marker(
+                [8.8275324, 9.4339343],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_ea76ecdc142c841379446061b4b38ad3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f94f8a14da4e37ba194ad6c7f2100a0c.setIcon(icon_ea76ecdc142c841379446061b4b38ad3);
+        
+    
+        var popup_eac9417f7c6823458874817ce95ca783 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31dd23bfc0b428df42e8d73c03be5d5f = $(`<div id="html_31dd23bfc0b428df42e8d73c03be5d5f" style="width: 100.0%; height: 100.0%;">SHANLANG (52 votes, Outlier Score: 0.5909090909090935)</div>`)[0];
+                popup_eac9417f7c6823458874817ce95ca783.setContent(html_31dd23bfc0b428df42e8d73c03be5d5f);
+            
+        
+
+        marker_f94f8a14da4e37ba194ad6c7f2100a0c.bindPopup(popup_eac9417f7c6823458874817ce95ca783)
+        ;
+
+        
+    
+    
+            var marker_4d77935fbee06e48b5c5fe1421c8ec9d = L.marker(
+                [8.8275324, 9.4339343],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_170a3a87ed26866b2eaa6b2c9032caa5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4d77935fbee06e48b5c5fe1421c8ec9d.setIcon(icon_170a3a87ed26866b2eaa6b2c9032caa5);
+        
+    
+        var popup_e774798d83e1d0dbf59c6ba44db3c8aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_854a1378a962a122a82766dc22f6bb8b = $(`<div id="html_854a1378a962a122a82766dc22f6bb8b" style="width: 100.0%; height: 100.0%;">NDER (51 votes, Outlier Score: 1.5909090909090935)</div>`)[0];
+                popup_e774798d83e1d0dbf59c6ba44db3c8aa.setContent(html_854a1378a962a122a82766dc22f6bb8b);
+            
+        
+
+        marker_4d77935fbee06e48b5c5fe1421c8ec9d.bindPopup(popup_e774798d83e1d0dbf59c6ba44db3c8aa)
+        ;
+
+        
+    
+    
+            var marker_e3ccae3812a7a929fba572c6e5fe4840 = L.marker(
+                [8.8275324, 9.4339343],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_560013c23e2dc582eb06521a02dab244 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e3ccae3812a7a929fba572c6e5fe4840.setIcon(icon_560013c23e2dc582eb06521a02dab244);
+        
+    
+        var popup_29759b04883a5a48893f763e4bef23f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d26fa916623031b33634245a76de9fe6 = $(`<div id="html_d26fa916623031b33634245a76de9fe6" style="width: 100.0%; height: 100.0%;">ZAMLONG (16 votes, Outlier Score: 36.59090909090909)</div>`)[0];
+                popup_29759b04883a5a48893f763e4bef23f1.setContent(html_d26fa916623031b33634245a76de9fe6);
+            
+        
+
+        marker_e3ccae3812a7a929fba572c6e5fe4840.bindPopup(popup_29759b04883a5a48893f763e4bef23f1)
+        ;
+
+        
+    
+    
+            var marker_5f2385edbd61deff060c3537246a18a6 = L.marker(
+                [8.8275324, 9.4339343],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_51288d7006920f8cd322f13d082d217d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5f2385edbd61deff060c3537246a18a6.setIcon(icon_51288d7006920f8cd322f13d082d217d);
+        
+    
+        var popup_67cbc75b2c899543743d6795a0d67c51 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_274eebf0ed4df5b25acb137b0e32afef = $(`<div id="html_274eebf0ed4df5b25acb137b0e32afef" style="width: 100.0%; height: 100.0%;">BAKIN KOGI PRY. SCH I (71 votes, Outlier Score: 18.409090909090907)</div>`)[0];
+                popup_67cbc75b2c899543743d6795a0d67c51.setContent(html_274eebf0ed4df5b25acb137b0e32afef);
+            
+        
+
+        marker_5f2385edbd61deff060c3537246a18a6.bindPopup(popup_67cbc75b2c899543743d6795a0d67c51)
+        ;
+
+        
+    
+    
+            var marker_20ef4cf2e46b41cbe4cb10259c92f933 = L.marker(
+                [8.8275324, 9.4339343],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_60d3195b20a653e05937ad06e1f9e072 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_20ef4cf2e46b41cbe4cb10259c92f933.setIcon(icon_60d3195b20a653e05937ad06e1f9e072);
+        
+    
+        var popup_d77c6f79ee06cf7dda65c6b63e66a846 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e875780e9d3e0f4cc5b39507042b9b0d = $(`<div id="html_e875780e9d3e0f4cc5b39507042b9b0d" style="width: 100.0%; height: 100.0%;">BAKIN KOGI PRY. SCH I (59 votes, Outlier Score: 6.4090909090909065)</div>`)[0];
+                popup_d77c6f79ee06cf7dda65c6b63e66a846.setContent(html_e875780e9d3e0f4cc5b39507042b9b0d);
+            
+        
+
+        marker_20ef4cf2e46b41cbe4cb10259c92f933.bindPopup(popup_d77c6f79ee06cf7dda65c6b63e66a846)
+        ;
+
+        
+    
+    
+            var marker_6fb0f803cadff7fcb920373171fbf7ba = L.marker(
+                [8.8275324, 9.4339343],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_d490886b37320e46285f50ea45b120de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6fb0f803cadff7fcb920373171fbf7ba.setIcon(icon_d490886b37320e46285f50ea45b120de);
+        
+    
+        var popup_1623b933fcf2ae81ab3d16017dcf0e63 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0839713b00844a093c7a1fe1844c793d = $(`<div id="html_0839713b00844a093c7a1fe1844c793d" style="width: 100.0%; height: 100.0%;">TSORO (32 votes, Outlier Score: 20.590909090909093)</div>`)[0];
+                popup_1623b933fcf2ae81ab3d16017dcf0e63.setContent(html_0839713b00844a093c7a1fe1844c793d);
+            
+        
+
+        marker_6fb0f803cadff7fcb920373171fbf7ba.bindPopup(popup_1623b933fcf2ae81ab3d16017dcf0e63)
+        ;
+
+        
+    
+    
+            var marker_21231a75e33fa154ce5acd3d432c8828 = L.marker(
+                [8.8275324, 9.4339343],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_cc5a964f5a4e4ed2f563927faa4a9aed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_21231a75e33fa154ce5acd3d432c8828.setIcon(icon_cc5a964f5a4e4ed2f563927faa4a9aed);
+        
+    
+        var popup_65c8435712194fe8e6a25f654e35deb7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c4d30d1bb50d6e52ca998a9dd0ab201 = $(`<div id="html_0c4d30d1bb50d6e52ca998a9dd0ab201" style="width: 100.0%; height: 100.0%;">BAKIN KOGI PRY. SCH II (519 votes, Outlier Score: 466.4090909090909)</div>`)[0];
+                popup_65c8435712194fe8e6a25f654e35deb7.setContent(html_0c4d30d1bb50d6e52ca998a9dd0ab201);
+            
+        
+
+        marker_21231a75e33fa154ce5acd3d432c8828.bindPopup(popup_65c8435712194fe8e6a25f654e35deb7)
+        ;
+
+        
+    
+    
+            var marker_32c25309d61687cc74e1ace6a83e9381 = L.marker(
+                [8.8275324, 9.4339343],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_01e6219302b62af2485a2c2566ccce4a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_32c25309d61687cc74e1ace6a83e9381.setIcon(icon_01e6219302b62af2485a2c2566ccce4a);
+        
+    
+        var popup_940db399d5c43eca9058048e03dbce5c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_238d12c35eb1e87d39dfd5754d94a242 = $(`<div id="html_238d12c35eb1e87d39dfd5754d94a242" style="width: 100.0%; height: 100.0%;">BAKIN KOGI PRY. SCH II (10 votes, Outlier Score: 42.59090909090909)</div>`)[0];
+                popup_940db399d5c43eca9058048e03dbce5c.setContent(html_238d12c35eb1e87d39dfd5754d94a242);
+            
+        
+
+        marker_32c25309d61687cc74e1ace6a83e9381.bindPopup(popup_940db399d5c43eca9058048e03dbce5c)
+        ;
+
+        
+    
+    
+            var marker_5883db8ab7572f97c9529c3900017b1c = L.marker(
+                [8.8275324, 9.4339343],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_e7655e91102547e0262600f3ccf85ace = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5883db8ab7572f97c9529c3900017b1c.setIcon(icon_e7655e91102547e0262600f3ccf85ace);
+        
+    
+        var popup_e4293e37b09b5cad5a661373fb411ff4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61ad34066ed21d650df5759201839060 = $(`<div id="html_61ad34066ed21d650df5759201839060" style="width: 100.0%; height: 100.0%;">SHIANLANG II (20 votes, Outlier Score: 32.59090909090909)</div>`)[0];
+                popup_e4293e37b09b5cad5a661373fb411ff4.setContent(html_61ad34066ed21d650df5759201839060);
+            
+        
+
+        marker_5883db8ab7572f97c9529c3900017b1c.bindPopup(popup_e4293e37b09b5cad5a661373fb411ff4)
+        ;
+
+        
+    
+    
+            var marker_c286f58bb587b950646b333187ec01d0 = L.marker(
+                [8.8275324, 9.4339343],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_5e23f5d3dede1ed3defceee5aba85546 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c286f58bb587b950646b333187ec01d0.setIcon(icon_5e23f5d3dede1ed3defceee5aba85546);
+        
+    
+        var popup_8293c644d78173c15487f7597c37a3ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13f8a1c311fcb33e86654c03b1c7f3e8 = $(`<div id="html_13f8a1c311fcb33e86654c03b1c7f3e8" style="width: 100.0%; height: 100.0%;">ANG. ANKIWAI (4 votes, Outlier Score: 48.59090909090909)</div>`)[0];
+                popup_8293c644d78173c15487f7597c37a3ca.setContent(html_13f8a1c311fcb33e86654c03b1c7f3e8);
+            
+        
+
+        marker_c286f58bb587b950646b333187ec01d0.bindPopup(popup_8293c644d78173c15487f7597c37a3ca)
+        ;
+
+        
+    
+    
+            var marker_8278819e8aeca4739072a2a729453e95 = L.marker(
+                [8.8275324, 9.4339343],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_6e67da0faf31459fc443bb3469bbb73f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8278819e8aeca4739072a2a729453e95.setIcon(icon_6e67da0faf31459fc443bb3469bbb73f);
+        
+    
+        var popup_ece95cecc3bb0a50983d8cfd07b16b74 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7cdff0679351defa2f35d4774383bbd0 = $(`<div id="html_7cdff0679351defa2f35d4774383bbd0" style="width: 100.0%; height: 100.0%;">OLD MARKET NDER (13 votes, Outlier Score: 39.59090909090909)</div>`)[0];
+                popup_ece95cecc3bb0a50983d8cfd07b16b74.setContent(html_7cdff0679351defa2f35d4774383bbd0);
+            
+        
+
+        marker_8278819e8aeca4739072a2a729453e95.bindPopup(popup_ece95cecc3bb0a50983d8cfd07b16b74)
+        ;
+
+        
+    
+    
+            var marker_d8fc3fbd431dbf5a23b8a92fe5cf501b = L.marker(
+                [8.8275324, 9.4339343],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_fd0aef4ab7e4d45c6b2273f706b8203b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d8fc3fbd431dbf5a23b8a92fe5cf501b.setIcon(icon_fd0aef4ab7e4d45c6b2273f706b8203b);
+        
+    
+        var popup_78b3a3e283864c5f81339b668555b481 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fbc7fe74a0879b6fa1ec7462fc18a902 = $(`<div id="html_fbc7fe74a0879b6fa1ec7462fc18a902" style="width: 100.0%; height: 100.0%;">LEA PRI. SCH. ZAMLONG (10 votes, Outlier Score: 42.59090909090909)</div>`)[0];
+                popup_78b3a3e283864c5f81339b668555b481.setContent(html_fbc7fe74a0879b6fa1ec7462fc18a902);
+            
+        
+
+        marker_d8fc3fbd431dbf5a23b8a92fe5cf501b.bindPopup(popup_78b3a3e283864c5f81339b668555b481)
+        ;
+
+        
+    
+    
+            var marker_d0bd4324ef447c7971e28de236833ae1 = L.marker(
+                [8.8275324, 9.4339343],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_916cd3040f6770a142b62715cf3b8780 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d0bd4324ef447c7971e28de236833ae1.setIcon(icon_916cd3040f6770a142b62715cf3b8780);
+        
+    
+        var popup_2bf1bbdc5d99495a774b8629107a38ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2bed7f7c654affe94d376afcbecb7144 = $(`<div id="html_2bed7f7c654affe94d376afcbecb7144" style="width: 100.0%; height: 100.0%;">MARKET SQUARE ZAMLONG (0 votes, Outlier Score: 52.59090909090909)</div>`)[0];
+                popup_2bf1bbdc5d99495a774b8629107a38ea.setContent(html_2bed7f7c654affe94d376afcbecb7144);
+            
+        
+
+        marker_d0bd4324ef447c7971e28de236833ae1.bindPopup(popup_2bf1bbdc5d99495a774b8629107a38ea)
+        ;
+
+        
+    
+    
+            var marker_07a863d467d64442b6e567275386689a = L.marker(
+                [8.8275324, 9.4339343],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_858567a7ce25208bd4624c711e059342 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_07a863d467d64442b6e567275386689a.setIcon(icon_858567a7ce25208bd4624c711e059342);
+        
+    
+        var popup_6ed223e12a5c54f931c6fb86e78498b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3f1777b8dbd6c495491deedb895b0e5 = $(`<div id="html_d3f1777b8dbd6c495491deedb895b0e5" style="width: 100.0%; height: 100.0%;">OPEN SPACE ANGWAN HAUSAWA (3 votes, Outlier Score: 49.59090909090909)</div>`)[0];
+                popup_6ed223e12a5c54f931c6fb86e78498b2.setContent(html_d3f1777b8dbd6c495491deedb895b0e5);
+            
+        
+
+        marker_07a863d467d64442b6e567275386689a.bindPopup(popup_6ed223e12a5c54f931c6fb86e78498b2)
+        ;
+
+        
+    
+    
+            var marker_fa6cb45167d296c85ce71c207af9f1d3 = L.marker(
+                [8.8275324, 9.4339343],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_a949bf1f17e613c6fdf6a58f56126e97 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fa6cb45167d296c85ce71c207af9f1d3.setIcon(icon_a949bf1f17e613c6fdf6a58f56126e97);
+        
+    
+        var popup_270e4bb224a4f8780527f8b9557c0096 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6eeb86e1888196ec155e04d3a5e76a82 = $(`<div id="html_6eeb86e1888196ec155e04d3a5e76a82" style="width: 100.0%; height: 100.0%;">LEA PRI. SCH. DUNGGUNG (62 votes, Outlier Score: 9.409090909090907)</div>`)[0];
+                popup_270e4bb224a4f8780527f8b9557c0096.setContent(html_6eeb86e1888196ec155e04d3a5e76a82);
+            
+        
+
+        marker_fa6cb45167d296c85ce71c207af9f1d3.bindPopup(popup_270e4bb224a4f8780527f8b9557c0096)
+        ;
+
+        
+    
+    
+            var marker_c1d3410f202ab4386bdda0d5f91724c8 = L.marker(
+                [8.8275324, 9.4339343],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_256848f177832aa99425013278259497 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c1d3410f202ab4386bdda0d5f91724c8.setIcon(icon_256848f177832aa99425013278259497);
+        
+    
+        var popup_73deca53ac003fbfb9717efab68ba6f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c587aa18b943d99f5aad021dbb5a24b = $(`<div id="html_4c587aa18b943d99f5aad021dbb5a24b" style="width: 100.0%; height: 100.0%;">LEA PRI. SCH. YARJA (93 votes, Outlier Score: 40.40909090909091)</div>`)[0];
+                popup_73deca53ac003fbfb9717efab68ba6f6.setContent(html_4c587aa18b943d99f5aad021dbb5a24b);
+            
+        
+
+        marker_c1d3410f202ab4386bdda0d5f91724c8.bindPopup(popup_73deca53ac003fbfb9717efab68ba6f6)
+        ;
+
+        
+    
+    
+            var marker_9d7b536a97a733ed70ec72084a8a721a = L.marker(
+                [8.8275324, 9.4339343],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_7c7f2546d769f8efa4130b5d3f0fef28 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9d7b536a97a733ed70ec72084a8a721a.setIcon(icon_7c7f2546d769f8efa4130b5d3f0fef28);
+        
+    
+        var popup_d191093e9398d2984b7f1600c5cacae7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9adeb722e22532dd7918e6521b3d0b16 = $(`<div id="html_9adeb722e22532dd7918e6521b3d0b16" style="width: 100.0%; height: 100.0%;">TSORO COMMUNITY CLINIC (23 votes, Outlier Score: 29.590909090909093)</div>`)[0];
+                popup_d191093e9398d2984b7f1600c5cacae7.setContent(html_9adeb722e22532dd7918e6521b3d0b16);
+            
+        
+
+        marker_9d7b536a97a733ed70ec72084a8a721a.bindPopup(popup_d191093e9398d2984b7f1600c5cacae7)
+        ;
+
+        
+    
+    
+            var marker_a46aa1dc97b94d03ee97e4a66bd5a47e = L.marker(
+                [8.8275324, 9.4339343],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_3c7850ad244c3812aee7a72eebfb55e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a46aa1dc97b94d03ee97e4a66bd5a47e.setIcon(icon_3c7850ad244c3812aee7a72eebfb55e9);
+        
+    
+        var popup_ea7007bd9c16d391e4f209827c57768f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_971bc670b2029501d4a24a8de9d5cdd7 = $(`<div id="html_971bc670b2029501d4a24a8de9d5cdd7" style="width: 100.0%; height: 100.0%;">UNG. SARKI MARKET (7 votes, Outlier Score: 45.59090909090909)</div>`)[0];
+                popup_ea7007bd9c16d391e4f209827c57768f.setContent(html_971bc670b2029501d4a24a8de9d5cdd7);
+            
+        
+
+        marker_a46aa1dc97b94d03ee97e4a66bd5a47e.bindPopup(popup_ea7007bd9c16d391e4f209827c57768f)
+        ;
+
+        
+    
+    
+            var marker_12da4762de9c0e6111b3a83cace8ec48 = L.marker(
+                [8.8275324, 9.4339343],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_4d31baa3ff1a518bd18b8136c6073963 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_12da4762de9c0e6111b3a83cace8ec48.setIcon(icon_4d31baa3ff1a518bd18b8136c6073963);
+        
+    
+        var popup_98a23fab14d16563260f4271d64f41bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e98065e47750319f44e9f2381c8a0cbf = $(`<div id="html_e98065e47750319f44e9f2381c8a0cbf" style="width: 100.0%; height: 100.0%;">LEA PRI. SCH. LU-LAWAN (12 votes, Outlier Score: 40.59090909090909)</div>`)[0];
+                popup_98a23fab14d16563260f4271d64f41bc.setContent(html_e98065e47750319f44e9f2381c8a0cbf);
+            
+        
+
+        marker_12da4762de9c0e6111b3a83cace8ec48.bindPopup(popup_98a23fab14d16563260f4271d64f41bc)
+        ;
+
+        
+    
+    
+            var marker_86f83c742c3fa7404879315089ba1cce = L.marker(
+                [9.1027648, 9.9632741],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_c4517f2c79e99313ac3e97f3be798cb1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_86f83c742c3fa7404879315089ba1cce.setIcon(icon_c4517f2c79e99313ac3e97f3be798cb1);
+        
+    
+        var popup_5b378ff3deda23879dbb254638a50a30 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_37d2b378730afb18eee2efbb59a7280f = $(`<div id="html_37d2b378730afb18eee2efbb59a7280f" style="width: 100.0%; height: 100.0%;">UNG. DANBIRAM (437 votes, Outlier Score: 350.1818181818182)</div>`)[0];
+                popup_5b378ff3deda23879dbb254638a50a30.setContent(html_37d2b378730afb18eee2efbb59a7280f);
+            
+        
+
+        marker_86f83c742c3fa7404879315089ba1cce.bindPopup(popup_5b378ff3deda23879dbb254638a50a30)
+        ;
+
+        
+    
+    
+            var marker_aa519674c786f65e44655a3b5e101183 = L.marker(
+                [9.1027648, 9.9632741],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_820c30db0c9dcc8a31620b1775f75159 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_aa519674c786f65e44655a3b5e101183.setIcon(icon_820c30db0c9dcc8a31620b1775f75159);
+        
+    
+        var popup_117947cd05d79369f34e87d9cb2e4e98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c37b8d38e992dbd2ae9bc44b8ee40b6b = $(`<div id="html_c37b8d38e992dbd2ae9bc44b8ee40b6b" style="width: 100.0%; height: 100.0%;">CENTRAL PRY. SCH. WASE II (145 votes, Outlier Score: 58.18181818181819)</div>`)[0];
+                popup_117947cd05d79369f34e87d9cb2e4e98.setContent(html_c37b8d38e992dbd2ae9bc44b8ee40b6b);
+            
+        
+
+        marker_aa519674c786f65e44655a3b5e101183.bindPopup(popup_117947cd05d79369f34e87d9cb2e4e98)
+        ;
+
+        
+    
+    
+            var marker_e3b0912c9283d0cef92be8d4d64db450 = L.marker(
+                [9.1027648, 9.9632741],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_8a1215bffc6658a588bb9abc17210534 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e3b0912c9283d0cef92be8d4d64db450.setIcon(icon_8a1215bffc6658a588bb9abc17210534);
+        
+    
+        var popup_13eaed6559446f24b289799e6536e9f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09344bf133eb0d7a028ec48551709fe5 = $(`<div id="html_09344bf133eb0d7a028ec48551709fe5" style="width: 100.0%; height: 100.0%;">UNG. MARAFA (227 votes, Outlier Score: 140.1818181818182)</div>`)[0];
+                popup_13eaed6559446f24b289799e6536e9f9.setContent(html_09344bf133eb0d7a028ec48551709fe5);
+            
+        
+
+        marker_e3b0912c9283d0cef92be8d4d64db450.bindPopup(popup_13eaed6559446f24b289799e6536e9f9)
+        ;
+
+        
+    
+    
+            var marker_b404816505e002ae7e9d219d71665bd3 = L.marker(
+                [9.099179, 9.9602175],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_50c9f63ddcf1ab0a93de6f5514c17b45 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b404816505e002ae7e9d219d71665bd3.setIcon(icon_50c9f63ddcf1ab0a93de6f5514c17b45);
+        
+    
+        var popup_263380c2b0645cd2367aceeecf53e3c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8edd195e4b675eb18131d5d8647a152e = $(`<div id="html_8edd195e4b675eb18131d5d8647a152e" style="width: 100.0%; height: 100.0%;">UNG. GALADIMA (95 votes, Outlier Score: 14.764705882352942)</div>`)[0];
+                popup_263380c2b0645cd2367aceeecf53e3c4.setContent(html_8edd195e4b675eb18131d5d8647a152e);
+            
+        
+
+        marker_b404816505e002ae7e9d219d71665bd3.bindPopup(popup_263380c2b0645cd2367aceeecf53e3c4)
+        ;
+
+        
+    
+    
+            var marker_a46487c865c0db28bedb9dec7c99a633 = L.marker(
+                [9.1027648, 9.9632741],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_df6b3056255045888e0b156a6832a46f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a46487c865c0db28bedb9dec7c99a633.setIcon(icon_df6b3056255045888e0b156a6832a46f);
+        
+    
+        var popup_17c5135c6892db7f44bb866f9011ec0a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_531948cec533864d6c6417022b8e1dd5 = $(`<div id="html_531948cec533864d6c6417022b8e1dd5" style="width: 100.0%; height: 100.0%;">COTTAGE HOSPITAL (224 votes, Outlier Score: 137.1818181818182)</div>`)[0];
+                popup_17c5135c6892db7f44bb866f9011ec0a.setContent(html_531948cec533864d6c6417022b8e1dd5);
+            
+        
+
+        marker_a46487c865c0db28bedb9dec7c99a633.bindPopup(popup_17c5135c6892db7f44bb866f9011ec0a)
+        ;
+
+        
+    
+    
+            var marker_386938c6757d1ae071d267e84b0a44cc = L.marker(
+                [9.1027648, 9.9632741],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_25616949fa6fe2f76da7d1fe4d526268 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_386938c6757d1ae071d267e84b0a44cc.setIcon(icon_25616949fa6fe2f76da7d1fe4d526268);
+        
+    
+        var popup_bfef1ba490f7834af892ae6af013b9d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5c6fb92e405f3f60b2d6a3c271b9193 = $(`<div id="html_a5c6fb92e405f3f60b2d6a3c271b9193" style="width: 100.0%; height: 100.0%;">UNG. ZONGO (189 votes, Outlier Score: 102.18181818181819)</div>`)[0];
+                popup_bfef1ba490f7834af892ae6af013b9d4.setContent(html_a5c6fb92e405f3f60b2d6a3c271b9193);
+            
+        
+
+        marker_386938c6757d1ae071d267e84b0a44cc.bindPopup(popup_bfef1ba490f7834af892ae6af013b9d4)
+        ;
+
+        
+    
+    
+            var marker_a3b09de8aa720d7369fc4210280393d6 = L.marker(
+                [9.1040886, 9.9679029],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_417f0168648f1032741823b639580620 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a3b09de8aa720d7369fc4210280393d6.setIcon(icon_417f0168648f1032741823b639580620);
+        
+    
+        var popup_c07f1dd541be3d32bea9f0dd892d6e29 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b08773eed12e3e9dc71b79857fe5ec64 = $(`<div id="html_b08773eed12e3e9dc71b79857fe5ec64" style="width: 100.0%; height: 100.0%;">UNG. SAYAWA LOWCOST (192 votes, Outlier Score: 83.85)</div>`)[0];
+                popup_c07f1dd541be3d32bea9f0dd892d6e29.setContent(html_b08773eed12e3e9dc71b79857fe5ec64);
+            
+        
+
+        marker_a3b09de8aa720d7369fc4210280393d6.bindPopup(popup_c07f1dd541be3d32bea9f0dd892d6e29)
+        ;
+
+        
+    
+    
+            var marker_941e8d02a0c0dbec3e5328cc3f5a7d32 = L.marker(
+                [9.1027648, 9.9632741],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_fa5a0e4c585fd4177041687fd8504e03 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_941e8d02a0c0dbec3e5328cc3f5a7d32.setIcon(icon_fa5a0e4c585fd4177041687fd8504e03);
+        
+    
+        var popup_872f27e1d1928d1207859ec905610fa0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79e07d8a063d10be3376123b58d3ea24 = $(`<div id="html_79e07d8a063d10be3376123b58d3ea24" style="width: 100.0%; height: 100.0%;">KAURAN SARKI WEST II (165 votes, Outlier Score: 78.18181818181819)</div>`)[0];
+                popup_872f27e1d1928d1207859ec905610fa0.setContent(html_79e07d8a063d10be3376123b58d3ea24);
+            
+        
+
+        marker_941e8d02a0c0dbec3e5328cc3f5a7d32.bindPopup(popup_872f27e1d1928d1207859ec905610fa0)
+        ;
+
+        
+    
+    
+            var marker_3df39ca2aae77e1a49ab6afba8b2ba4c = L.marker(
+                [9.099179, 9.9602175],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_e5d0a3964ed27cd36e8a214bed712c9d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3df39ca2aae77e1a49ab6afba8b2ba4c.setIcon(icon_e5d0a3964ed27cd36e8a214bed712c9d);
+        
+    
+        var popup_4c7ce4bf5981774017a34203e762ce41 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_335e01241ed127f453d19176561b2854 = $(`<div id="html_335e01241ed127f453d19176561b2854" style="width: 100.0%; height: 100.0%;">UNG. GALADIMA (38 votes, Outlier Score: 42.23529411764706)</div>`)[0];
+                popup_4c7ce4bf5981774017a34203e762ce41.setContent(html_335e01241ed127f453d19176561b2854);
+            
+        
+
+        marker_3df39ca2aae77e1a49ab6afba8b2ba4c.bindPopup(popup_4c7ce4bf5981774017a34203e762ce41)
+        ;
+
+        
+    
+    
+            var marker_a92893806b76a7788acfedd162cd249e = L.marker(
+                [9.0946491, 9.9604795],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_2786573ccdca2a2beca24eca2c4e0a2c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a92893806b76a7788acfedd162cd249e.setIcon(icon_2786573ccdca2a2beca24eca2c4e0a2c);
+        
+    
+        var popup_f7b4ec3ccd36b42dd3f12cef308b0c2c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b9b246f5b50f6bfdc41bffe4072ab14 = $(`<div id="html_8b9b246f5b50f6bfdc41bffe4072ab14" style="width: 100.0%; height: 100.0%;">PRY SCHOOL G.(KOGI) II (85 votes, Outlier Score: 1.3333333333333286)</div>`)[0];
+                popup_f7b4ec3ccd36b42dd3f12cef308b0c2c.setContent(html_8b9b246f5b50f6bfdc41bffe4072ab14);
+            
+        
+
+        marker_a92893806b76a7788acfedd162cd249e.bindPopup(popup_f7b4ec3ccd36b42dd3f12cef308b0c2c)
+        ;
+
+        
+    
+    
+            var marker_bb2f0cfc892d9af00e3a51acfce2a3d0 = L.marker(
+                [9.10447, 9.96524],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_605970c4c6d128e0a197ea4b74689e73 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bb2f0cfc892d9af00e3a51acfce2a3d0.setIcon(icon_605970c4c6d128e0a197ea4b74689e73);
+        
+    
+        var popup_52dc7f6cc300b26eb20fd7939acc41c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d507ed7888c720bf04dcc3da464b237 = $(`<div id="html_6d507ed7888c720bf04dcc3da464b237" style="width: 100.0%; height: 100.0%;">KAWO TIV (1 votes, Outlier Score: 98.56)</div>`)[0];
+                popup_52dc7f6cc300b26eb20fd7939acc41c8.setContent(html_6d507ed7888c720bf04dcc3da464b237);
+            
+        
+
+        marker_bb2f0cfc892d9af00e3a51acfce2a3d0.bindPopup(popup_52dc7f6cc300b26eb20fd7939acc41c8)
+        ;
+
+        
+    
+    
+            var marker_653b52368a134f9db5e8bda28ecead31 = L.marker(
+                [9.1027648, 9.9632741],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_6bff5f914dc3f48d4a93780f1a7d3b1e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_653b52368a134f9db5e8bda28ecead31.setIcon(icon_6bff5f914dc3f48d4a93780f1a7d3b1e);
+        
+    
+        var popup_3e25af19d0d4596e5dc6bb5693166e96 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9ff1fd5058e296bfab2be33df8456d51 = $(`<div id="html_9ff1fd5058e296bfab2be33df8456d51" style="width: 100.0%; height: 100.0%;">UNG. DANBIRAM (437 votes, Outlier Score: 350.1818181818182)</div>`)[0];
+                popup_3e25af19d0d4596e5dc6bb5693166e96.setContent(html_9ff1fd5058e296bfab2be33df8456d51);
+            
+        
+
+        marker_653b52368a134f9db5e8bda28ecead31.bindPopup(popup_3e25af19d0d4596e5dc6bb5693166e96)
+        ;
+
+        
+    
+    
+            var marker_ed1e96809e28ba2a3f16f004af3c1515 = L.marker(
+                [9.099179, 9.9602175],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_7d07cbcd8d8ab19d283c7c0b2ba4001c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ed1e96809e28ba2a3f16f004af3c1515.setIcon(icon_7d07cbcd8d8ab19d283c7c0b2ba4001c);
+        
+    
+        var popup_ae61e9197be98adaa93ac42e75a6fa84 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f341a07fb20c449577e886a1c6bfb76 = $(`<div id="html_2f341a07fb20c449577e886a1c6bfb76" style="width: 100.0%; height: 100.0%;">UNG. GALADIMA(TURAKI) (141 votes, Outlier Score: 60.76470588235294)</div>`)[0];
+                popup_ae61e9197be98adaa93ac42e75a6fa84.setContent(html_2f341a07fb20c449577e886a1c6bfb76);
+            
+        
+
+        marker_ed1e96809e28ba2a3f16f004af3c1515.bindPopup(popup_ae61e9197be98adaa93ac42e75a6fa84)
+        ;
+
+        
+    
+    
+            var marker_ee90d6650bb843c4eadeffea814fcaa5 = L.marker(
+                [9.0946491, 9.9604795],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_d72e2ef15193659a2185d636d120744b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ee90d6650bb843c4eadeffea814fcaa5.setIcon(icon_d72e2ef15193659a2185d636d120744b);
+        
+    
+        var popup_78394377a6c9767b6a2c44fddc9575bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cdba126b6dcd1724981825a3457c1e05 = $(`<div id="html_cdba126b6dcd1724981825a3457c1e05" style="width: 100.0%; height: 100.0%;">STAFF SCHOOL WASE (61 votes, Outlier Score: 22.66666666666667)</div>`)[0];
+                popup_78394377a6c9767b6a2c44fddc9575bc.setContent(html_cdba126b6dcd1724981825a3457c1e05);
+            
+        
+
+        marker_ee90d6650bb843c4eadeffea814fcaa5.bindPopup(popup_78394377a6c9767b6a2c44fddc9575bc)
+        ;
+
+        
+    
+    
+            var marker_fc586900bc810e4eb21d68c712618400 = L.marker(
+                [9.0946491, 9.9604795],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_1bcc22a106f9f1ad0625652f72cf8aff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fc586900bc810e4eb21d68c712618400.setIcon(icon_1bcc22a106f9f1ad0625652f72cf8aff);
+        
+    
+        var popup_eebe13654dd9cfea978761285246fa24 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6fd2512e0230f8edba5ec5aac95b7b51 = $(`<div id="html_6fd2512e0230f8edba5ec5aac95b7b51" style="width: 100.0%; height: 100.0%;">MUH. ABDULLAHI WASE SCHOOL (22 votes, Outlier Score: 61.66666666666667)</div>`)[0];
+                popup_eebe13654dd9cfea978761285246fa24.setContent(html_6fd2512e0230f8edba5ec5aac95b7b51);
+            
+        
+
+        marker_fc586900bc810e4eb21d68c712618400.bindPopup(popup_eebe13654dd9cfea978761285246fa24)
+        ;
+
+        
+    
+    
+            var marker_79a4ebc756bd50b7f6ac7d5a5dc15713 = L.marker(
+                [9.1027648, 9.9632741],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_73d96538cfb2e391da22d150f0d00d7c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_79a4ebc756bd50b7f6ac7d5a5dc15713.setIcon(icon_73d96538cfb2e391da22d150f0d00d7c);
+        
+    
+        var popup_b20ee061ebaab63eb5cfcde2eadae7f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19eb7cb7cf20b178c2836eae6bcf32dd = $(`<div id="html_19eb7cb7cf20b178c2836eae6bcf32dd" style="width: 100.0%; height: 100.0%;">FILIN SUKWA (80 votes, Outlier Score: 6.818181818181813)</div>`)[0];
+                popup_b20ee061ebaab63eb5cfcde2eadae7f7.setContent(html_19eb7cb7cf20b178c2836eae6bcf32dd);
+            
+        
+
+        marker_79a4ebc756bd50b7f6ac7d5a5dc15713.bindPopup(popup_b20ee061ebaab63eb5cfcde2eadae7f7)
+        ;
+
+        
+    
+    
+            var marker_8024aceeadcfdd2148c833389ab24430 = L.marker(
+                [9.1027648, 9.9632741],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_b987574029ea87e8320a52352178af3f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8024aceeadcfdd2148c833389ab24430.setIcon(icon_b987574029ea87e8320a52352178af3f);
+        
+    
+        var popup_9787da2defec2b1b7a2628833cfc40f4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df61973028a0bab3024d2d3f9ce1e09a = $(`<div id="html_df61973028a0bab3024d2d3f9ce1e09a" style="width: 100.0%; height: 100.0%;">OLD NEPA OFFICE (35 votes, Outlier Score: 51.81818181818181)</div>`)[0];
+                popup_9787da2defec2b1b7a2628833cfc40f4.setContent(html_df61973028a0bab3024d2d3f9ce1e09a);
+            
+        
+
+        marker_8024aceeadcfdd2148c833389ab24430.bindPopup(popup_9787da2defec2b1b7a2628833cfc40f4)
+        ;
+
+        
+    
+    
+            var marker_77de5f896ae914d7563c1cfc218de721 = L.marker(
+                [9.1027648, 9.9632741],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_d8179ba542d3b3bd608dfa90397b80fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_77de5f896ae914d7563c1cfc218de721.setIcon(icon_d8179ba542d3b3bd608dfa90397b80fd);
+        
+    
+        var popup_2c097815fe5f48d0622a7a3530c6b5ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce113bebb71fb1bba23dd6fc58bbfb74 = $(`<div id="html_ce113bebb71fb1bba23dd6fc58bbfb74" style="width: 100.0%; height: 100.0%;">RANDAN PAMPO (52 votes, Outlier Score: 34.81818181818181)</div>`)[0];
+                popup_2c097815fe5f48d0622a7a3530c6b5ee.setContent(html_ce113bebb71fb1bba23dd6fc58bbfb74);
+            
+        
+
+        marker_77de5f896ae914d7563c1cfc218de721.bindPopup(popup_2c097815fe5f48d0622a7a3530c6b5ee)
+        ;
+
+        
+    
+    
+            var marker_2e5217c90403652d1ef7f4fdb3013b18 = L.marker(
+                [9.0946491, 9.9604795],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_bb709706612fa9b989924dfe82e50d8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2e5217c90403652d1ef7f4fdb3013b18.setIcon(icon_bb709706612fa9b989924dfe82e50d8f);
+        
+    
+        var popup_3ebeaa2dd4cd0bb202ccbe73c9cb815a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db2bfb9e0136d813403634d09e62bf7e = $(`<div id="html_db2bfb9e0136d813403634d09e62bf7e" style="width: 100.0%; height: 100.0%;">MAGISTRATE COURT (32 votes, Outlier Score: 51.66666666666667)</div>`)[0];
+                popup_3ebeaa2dd4cd0bb202ccbe73c9cb815a.setContent(html_db2bfb9e0136d813403634d09e62bf7e);
+            
+        
+
+        marker_2e5217c90403652d1ef7f4fdb3013b18.bindPopup(popup_3ebeaa2dd4cd0bb202ccbe73c9cb815a)
+        ;
+
+        
+    
+    
+            var marker_afe38f277f10d19d2c91d82f2e155043 = L.marker(
+                [9.0946491, 9.9604795],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_79bfc433da3a113a298f5ee758f46765 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_afe38f277f10d19d2c91d82f2e155043.setIcon(icon_79bfc433da3a113a298f5ee758f46765);
+        
+    
+        var popup_7319f40fc4ec345941969bb4ba32842f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68c045fc6ffb87d71533ee2dd88d8e7e = $(`<div id="html_68c045fc6ffb87d71533ee2dd88d8e7e" style="width: 100.0%; height: 100.0%;">DISTRICT OFFICE (12 votes, Outlier Score: 71.66666666666667)</div>`)[0];
+                popup_7319f40fc4ec345941969bb4ba32842f.setContent(html_68c045fc6ffb87d71533ee2dd88d8e7e);
+            
+        
+
+        marker_afe38f277f10d19d2c91d82f2e155043.bindPopup(popup_7319f40fc4ec345941969bb4ba32842f)
+        ;
+
+        
+    
+    
+            var marker_7caab99dbdbf8b1964d6a40b7890238d = L.marker(
+                [9.0946491, 9.9604795],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_f344196d2c0d5a64fd1ca30ceeb58e1e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7caab99dbdbf8b1964d6a40b7890238d.setIcon(icon_f344196d2c0d5a64fd1ca30ceeb58e1e);
+        
+    
+        var popup_8b1b716654f998e02fc67246901d313a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb6963d0ac126704e91d1ca5cc533ae3 = $(`<div id="html_bb6963d0ac126704e91d1ca5cc533ae3" style="width: 100.0%; height: 100.0%;">SHANKUNU OLD PRI SCH (86 votes, Outlier Score: 2.3333333333333286)</div>`)[0];
+                popup_8b1b716654f998e02fc67246901d313a.setContent(html_bb6963d0ac126704e91d1ca5cc533ae3);
+            
+        
+
+        marker_7caab99dbdbf8b1964d6a40b7890238d.bindPopup(popup_8b1b716654f998e02fc67246901d313a)
+        ;
+
+        
+    
+    
+            var marker_18a0965bfc11b9adfbad2651d161cb9b = L.marker(
+                [9.099179, 9.9602175],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_96dd7d2dcbda7f7f7d10871b19bcad71 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_18a0965bfc11b9adfbad2651d161cb9b.setIcon(icon_96dd7d2dcbda7f7f7d10871b19bcad71);
+        
+    
+        var popup_78042a360e6081860960e6e1dac44222 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44d08259053f4c36ac6212e98069de98 = $(`<div id="html_44d08259053f4c36ac6212e98069de98" style="width: 100.0%; height: 100.0%;">UNG GALADIMA PRI SCH I (34 votes, Outlier Score: 46.23529411764706)</div>`)[0];
+                popup_78042a360e6081860960e6e1dac44222.setContent(html_44d08259053f4c36ac6212e98069de98);
+            
+        
+
+        marker_18a0965bfc11b9adfbad2651d161cb9b.bindPopup(popup_78042a360e6081860960e6e1dac44222)
+        ;
+
+        
+    
+    
+            var marker_bcac9d410400b8e23aa416e8c5e16d19 = L.marker(
+                [9.099179, 9.9602175],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_98f40fa0a48de9fe6c40244fd425d4bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bcac9d410400b8e23aa416e8c5e16d19.setIcon(icon_98f40fa0a48de9fe6c40244fd425d4bd);
+        
+    
+        var popup_11539ac05276778cc7451d6509e6a27f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3063b53c0bcdba1cb2bc6da48794380b = $(`<div id="html_3063b53c0bcdba1cb2bc6da48794380b" style="width: 100.0%; height: 100.0%;">UNG GALADIMA PRI SCH II (18 votes, Outlier Score: 62.23529411764706)</div>`)[0];
+                popup_11539ac05276778cc7451d6509e6a27f.setContent(html_3063b53c0bcdba1cb2bc6da48794380b);
+            
+        
+
+        marker_bcac9d410400b8e23aa416e8c5e16d19.bindPopup(popup_11539ac05276778cc7451d6509e6a27f)
+        ;
+
+        
+    
+    
+            var marker_143217cae46abefb1761750dfeb69575 = L.marker(
+                [9.1027648, 9.9632741],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_ee33139ca34616cdc3693ab1c2fa89bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_143217cae46abefb1761750dfeb69575.setIcon(icon_ee33139ca34616cdc3693ab1c2fa89bf);
+        
+    
+        var popup_16412e3db5aa9e63dcdf434658ecc84d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12c2702e54e6b6a740a0baed7ac65594 = $(`<div id="html_12c2702e54e6b6a740a0baed7ac65594" style="width: 100.0%; height: 100.0%;">BAYAN BANKI FOOTBALL FIELD (57 votes, Outlier Score: 29.818181818181813)</div>`)[0];
+                popup_16412e3db5aa9e63dcdf434658ecc84d.setContent(html_12c2702e54e6b6a740a0baed7ac65594);
+            
+        
+
+        marker_143217cae46abefb1761750dfeb69575.bindPopup(popup_16412e3db5aa9e63dcdf434658ecc84d)
+        ;
+
+        
+    
+    
+            var marker_5732f564541258fcbf4b70f58232b9dc = L.marker(
+                [9.099539, 9.967523],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_1b36e318a297a35c2c311af91549d04d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5732f564541258fcbf4b70f58232b9dc.setIcon(icon_1b36e318a297a35c2c311af91549d04d);
+        
+    
+        var popup_a011f34a3dba53f5deebeaf411d74c0a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f6ed1c75337fa4e90de6ae4f586eb87 = $(`<div id="html_1f6ed1c75337fa4e90de6ae4f586eb87" style="width: 100.0%; height: 100.0%;">GARKUWA COMMUNITY SCH (36 votes, Outlier Score: 50.81818181818181)</div>`)[0];
+                popup_a011f34a3dba53f5deebeaf411d74c0a.setContent(html_1f6ed1c75337fa4e90de6ae4f586eb87);
+            
+        
+
+        marker_5732f564541258fcbf4b70f58232b9dc.bindPopup(popup_a011f34a3dba53f5deebeaf411d74c0a)
+        ;
+
+        
+    
+    
+            var marker_727b94cda4168442d5903cad35c36b88 = L.marker(
+                [9.0995, 9.968231],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_8f8a071657a8b84bc2d6d292c529a5fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_727b94cda4168442d5903cad35c36b88.setIcon(icon_8f8a071657a8b84bc2d6d292c529a5fb);
+        
+    
+        var popup_66ecf84367ca033cbbaa281c2e483046 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e017978fee073faec077998908072dae = $(`<div id="html_e017978fee073faec077998908072dae" style="width: 100.0%; height: 100.0%;">GARKUWA COMMUNITY SCH I (24 votes, Outlier Score: 75.56)</div>`)[0];
+                popup_66ecf84367ca033cbbaa281c2e483046.setContent(html_e017978fee073faec077998908072dae);
+            
+        
+
+        marker_727b94cda4168442d5903cad35c36b88.bindPopup(popup_66ecf84367ca033cbbaa281c2e483046)
+        ;
+
+        
+    
+    
+            var marker_46306116d57fdf8a5202402bf13da27c = L.marker(
+                [9.1027648, 9.9632741],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_fcf663a98828cd683d2cedc6e0c3f7b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_46306116d57fdf8a5202402bf13da27c.setIcon(icon_fcf663a98828cd683d2cedc6e0c3f7b7);
+        
+    
+        var popup_11ea248b0b854f876ff05d51d1d93877 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99302cf4a4bf05e576150748494ba164 = $(`<div id="html_99302cf4a4bf05e576150748494ba164" style="width: 100.0%; height: 100.0%;">LOWER BENUE PRI SCH SAYAWA (82 votes, Outlier Score: 4.818181818181813)</div>`)[0];
+                popup_11ea248b0b854f876ff05d51d1d93877.setContent(html_99302cf4a4bf05e576150748494ba164);
+            
+        
+
+        marker_46306116d57fdf8a5202402bf13da27c.bindPopup(popup_11ea248b0b854f876ff05d51d1d93877)
+        ;
+
+        
+    
+    
+            var marker_df6f11340639ab43d1371ef91aa7fc29 = L.marker(
+                [9.1027648, 9.9632741],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_b9336fe244ee84d4fed69195428f017f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_df6f11340639ab43d1371ef91aa7fc29.setIcon(icon_b9336fe244ee84d4fed69195428f017f);
+        
+    
+        var popup_4f827adc3e1b0e0aec4a66916004993d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e0460c5336f73e746ee6a445a0c1786 = $(`<div id="html_5e0460c5336f73e746ee6a445a0c1786" style="width: 100.0%; height: 100.0%;">UNG SAYAWA CIVIL DEFENCE (26 votes, Outlier Score: 60.81818181818181)</div>`)[0];
+                popup_4f827adc3e1b0e0aec4a66916004993d.setContent(html_5e0460c5336f73e746ee6a445a0c1786);
+            
+        
+
+        marker_df6f11340639ab43d1371ef91aa7fc29.bindPopup(popup_4f827adc3e1b0e0aec4a66916004993d)
+        ;
+
+        
+    
+    
+            var marker_d4ab337a26c2a1d5ee2a8f78dc1602b0 = L.marker(
+                [9.1027648, 9.9632741],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_733ed860a1869527396a22bd0bdf792a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d4ab337a26c2a1d5ee2a8f78dc1602b0.setIcon(icon_733ed860a1869527396a22bd0bdf792a);
+        
+    
+        var popup_85db9577dc7e2824be7e94543e201043 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1ec6962407064ddd9aa9243bc5b2572 = $(`<div id="html_c1ec6962407064ddd9aa9243bc5b2572" style="width: 100.0%; height: 100.0%;">UNG ZANGO KWATTA (31 votes, Outlier Score: 55.81818181818181)</div>`)[0];
+                popup_85db9577dc7e2824be7e94543e201043.setContent(html_c1ec6962407064ddd9aa9243bc5b2572);
+            
+        
+
+        marker_d4ab337a26c2a1d5ee2a8f78dc1602b0.bindPopup(popup_85db9577dc7e2824be7e94543e201043)
+        ;
+
+        
+    
+    
+            var marker_99856c4978c5cd8f1886334fce95753f = L.marker(
+                [9.1027648, 9.9632741],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_162b5b9f7b7308998db0643800cc6bc6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_99856c4978c5cd8f1886334fce95753f.setIcon(icon_162b5b9f7b7308998db0643800cc6bc6);
+        
+    
+        var popup_14320b3f13ea33c341d0c1eab5e7423f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e45f5b2a12c304ccfbd23c9a91a46ab2 = $(`<div id="html_e45f5b2a12c304ccfbd23c9a91a46ab2" style="width: 100.0%; height: 100.0%;">HEALTH CENTRE (40 votes, Outlier Score: 46.81818181818181)</div>`)[0];
+                popup_14320b3f13ea33c341d0c1eab5e7423f.setContent(html_e45f5b2a12c304ccfbd23c9a91a46ab2);
+            
+        
+
+        marker_99856c4978c5cd8f1886334fce95753f.bindPopup(popup_14320b3f13ea33c341d0c1eab5e7423f)
+        ;
+
+        
+    
+    
+            var marker_bec53be0e639e4178d4df825cb0d32ae = L.marker(
+                [9.0946491, 9.9604795],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_6ff517fde4703cbb5436696f3a1435ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bec53be0e639e4178d4df825cb0d32ae.setIcon(icon_6ff517fde4703cbb5436696f3a1435ca);
+        
+    
+        var popup_89e82ff1ef9abed244002a9fa9d6aa65 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef4085a82a9ad635a9214d082eca6b73 = $(`<div id="html_ef4085a82a9ad635a9214d082eca6b73" style="width: 100.0%; height: 100.0%;">GSS WASE (11 votes, Outlier Score: 72.66666666666667)</div>`)[0];
+                popup_89e82ff1ef9abed244002a9fa9d6aa65.setContent(html_ef4085a82a9ad635a9214d082eca6b73);
+            
+        
+
+        marker_bec53be0e639e4178d4df825cb0d32ae.bindPopup(popup_89e82ff1ef9abed244002a9fa9d6aa65)
+        ;
+
+        
+    
+    
+            var marker_0ecd328022d4983364e947f4a03cc411 = L.marker(
+                [9.0946491, 9.9604795],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_ab6765f7fc234bac1c0de4853ad79875 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0ecd328022d4983364e947f4a03cc411.setIcon(icon_ab6765f7fc234bac1c0de4853ad79875);
+        
+    
+        var popup_d846c3ad24d36212bfc658f0386247e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a30973b3014018aecb2adf61dc901637 = $(`<div id="html_a30973b3014018aecb2adf61dc901637" style="width: 100.0%; height: 100.0%;">PRI SCH UNG MALLAM ADAMA (67 votes, Outlier Score: 16.66666666666667)</div>`)[0];
+                popup_d846c3ad24d36212bfc658f0386247e1.setContent(html_a30973b3014018aecb2adf61dc901637);
+            
+        
+
+        marker_0ecd328022d4983364e947f4a03cc411.bindPopup(popup_d846c3ad24d36212bfc658f0386247e1)
+        ;
+
+        
+    
+    
+            var marker_1003d03a889ffd2e42077afd8f539b79 = L.marker(
+                [9.1027648, 9.9632741],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_0ba8b93b6e4ba4d22aff3148483ebbea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1003d03a889ffd2e42077afd8f539b79.setIcon(icon_0ba8b93b6e4ba4d22aff3148483ebbea);
+        
+    
+        var popup_f331800f374a554f7ea9e7fddd05713e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ac7e710d0913c32aba6c325f9aae354 = $(`<div id="html_4ac7e710d0913c32aba6c325f9aae354" style="width: 100.0%; height: 100.0%;">PRI. SCH. UNG. DANBIRAM (83 votes, Outlier Score: 3.818181818181813)</div>`)[0];
+                popup_f331800f374a554f7ea9e7fddd05713e.setContent(html_4ac7e710d0913c32aba6c325f9aae354);
+            
+        
+
+        marker_1003d03a889ffd2e42077afd8f539b79.bindPopup(popup_f331800f374a554f7ea9e7fddd05713e)
+        ;
+
+        
+    
+    
+            var marker_7c2afe6a29c173f169e9030ef5198b2b = L.marker(
+                [9.1027648, 9.9632741],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_dbd16f29a56303c24a2b0505ad2dda01 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7c2afe6a29c173f169e9030ef5198b2b.setIcon(icon_dbd16f29a56303c24a2b0505ad2dda01);
+        
+    
+        var popup_dd9b2e738c7a62770382ac17fb2fd8ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_045114d0eb84b0b0300328798cb01ded = $(`<div id="html_045114d0eb84b0b0300328798cb01ded" style="width: 100.0%; height: 100.0%;">JANARI FOOTBALL FIELD (37 votes, Outlier Score: 49.81818181818181)</div>`)[0];
+                popup_dd9b2e738c7a62770382ac17fb2fd8ee.setContent(html_045114d0eb84b0b0300328798cb01ded);
+            
+        
+
+        marker_7c2afe6a29c173f169e9030ef5198b2b.bindPopup(popup_dd9b2e738c7a62770382ac17fb2fd8ee)
+        ;
+
+        
+    
+    
+            var marker_feb3a746c874e9fe898ed2c398534a0b = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_c4753ead21b06709140ad4ac69e67b79 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_feb3a746c874e9fe898ed2c398534a0b.setIcon(icon_c4753ead21b06709140ad4ac69e67b79);
+        
+    
+        var popup_148d518645f4b1cfac5071e42a7e4edc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_432381241af9ec82c488aa98252e3c36 = $(`<div id="html_432381241af9ec82c488aa98252e3c36" style="width: 100.0%; height: 100.0%;">ZARON VILLAGE 1 (334 votes, Outlier Score: 288.1927710843373)</div>`)[0];
+                popup_148d518645f4b1cfac5071e42a7e4edc.setContent(html_432381241af9ec82c488aa98252e3c36);
+            
+        
+
+        marker_feb3a746c874e9fe898ed2c398534a0b.bindPopup(popup_148d518645f4b1cfac5071e42a7e4edc)
+        ;
+
+        
+    
+    
+            var marker_4e0d12af1f7990743befff2253be5d1e = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_757cd518ad3f6ead132f56fa49b40431 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4e0d12af1f7990743befff2253be5d1e.setIcon(icon_757cd518ad3f6ead132f56fa49b40431);
+        
+    
+        var popup_e7d6414fa57538e66869c16bbff6b499 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b4d1eba3db352c088d0c94ca0673e34 = $(`<div id="html_1b4d1eba3db352c088d0c94ca0673e34" style="width: 100.0%; height: 100.0%;">ST. MARKS PRIM. SCH. I (66 votes, Outlier Score: 20.192771084337352)</div>`)[0];
+                popup_e7d6414fa57538e66869c16bbff6b499.setContent(html_1b4d1eba3db352c088d0c94ca0673e34);
+            
+        
+
+        marker_4e0d12af1f7990743befff2253be5d1e.bindPopup(popup_e7d6414fa57538e66869c16bbff6b499)
+        ;
+
+        
+    
+    
+            var marker_418cc316d78918f37e1be83c7c1a1b5e = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_f8b0d8e9d413b9e4864f2e97033d6939 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_418cc316d78918f37e1be83c7c1a1b5e.setIcon(icon_f8b0d8e9d413b9e4864f2e97033d6939);
+        
+    
+        var popup_8ad147d2e73e37dd73de4205b3526328 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_adab193e35958817f6ede05cfed807ec = $(`<div id="html_adab193e35958817f6ede05cfed807ec" style="width: 100.0%; height: 100.0%;">GANGARE (66 votes, Outlier Score: 20.192771084337352)</div>`)[0];
+                popup_8ad147d2e73e37dd73de4205b3526328.setContent(html_adab193e35958817f6ede05cfed807ec);
+            
+        
+
+        marker_418cc316d78918f37e1be83c7c1a1b5e.bindPopup(popup_8ad147d2e73e37dd73de4205b3526328)
+        ;
+
+        
+    
+    
+            var marker_f1832933163de91a211e480650698de4 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_72f30bf83ab98de118eea2cd4eaccc8a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f1832933163de91a211e480650698de4.setIcon(icon_72f30bf83ab98de118eea2cd4eaccc8a);
+        
+    
+        var popup_94a9138d62a5ead9fcb32898b2a8a97d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a45f26d9e52f4edb2e88738c8611d46 = $(`<div id="html_4a45f26d9e52f4edb2e88738c8611d46" style="width: 100.0%; height: 100.0%;">GANGARE TASHA 1 (62 votes, Outlier Score: 16.192771084337352)</div>`)[0];
+                popup_94a9138d62a5ead9fcb32898b2a8a97d.setContent(html_4a45f26d9e52f4edb2e88738c8611d46);
+            
+        
+
+        marker_f1832933163de91a211e480650698de4.bindPopup(popup_94a9138d62a5ead9fcb32898b2a8a97d)
+        ;
+
+        
+    
+    
+            var marker_9baf1e35f483bd5f87e037f4c58427e2 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_3e2836288511002403571d13d4df50b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9baf1e35f483bd5f87e037f4c58427e2.setIcon(icon_3e2836288511002403571d13d4df50b2);
+        
+    
+        var popup_491afa4e3c93f35346f47a6e1cfccca4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0143674e0d53380174687d334cfead7b = $(`<div id="html_0143674e0d53380174687d334cfead7b" style="width: 100.0%; height: 100.0%;">KASHANGWOL (36 votes, Outlier Score: 9.807228915662648)</div>`)[0];
+                popup_491afa4e3c93f35346f47a6e1cfccca4.setContent(html_0143674e0d53380174687d334cfead7b);
+            
+        
+
+        marker_9baf1e35f483bd5f87e037f4c58427e2.bindPopup(popup_491afa4e3c93f35346f47a6e1cfccca4)
+        ;
+
+        
+    
+    
+            var marker_99b41a3a4caaf1e7ff333015a6cb3322 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_d59f93de826c27dd80c3a6fe4d85af9e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_99b41a3a4caaf1e7ff333015a6cb3322.setIcon(icon_d59f93de826c27dd80c3a6fe4d85af9e);
+        
+    
+        var popup_0673305239030c89b52d2d35d6737c2c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aeb80029a5a50f8a7d607ed8a64d8f6d = $(`<div id="html_aeb80029a5a50f8a7d607ed8a64d8f6d" style="width: 100.0%; height: 100.0%;">DAN MANGU (39 votes, Outlier Score: 6.807228915662648)</div>`)[0];
+                popup_0673305239030c89b52d2d35d6737c2c.setContent(html_aeb80029a5a50f8a7d607ed8a64d8f6d);
+            
+        
+
+        marker_99b41a3a4caaf1e7ff333015a6cb3322.bindPopup(popup_0673305239030c89b52d2d35d6737c2c)
+        ;
+
+        
+    
+    
+            var marker_acf1008451be85a605033f1619eeff2d = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_729170b7ba879feef0826afdcbc63dad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_acf1008451be85a605033f1619eeff2d.setIcon(icon_729170b7ba879feef0826afdcbc63dad);
+        
+    
+        var popup_f210c5dcc9e2822690b465a4652cd3bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_edec8be1dc5fb930ee7db6de4fec8f79 = $(`<div id="html_edec8be1dc5fb930ee7db6de4fec8f79" style="width: 100.0%; height: 100.0%;">TAGBAM I (29 votes, Outlier Score: 16.807228915662648)</div>`)[0];
+                popup_f210c5dcc9e2822690b465a4652cd3bb.setContent(html_edec8be1dc5fb930ee7db6de4fec8f79);
+            
+        
+
+        marker_acf1008451be85a605033f1619eeff2d.bindPopup(popup_f210c5dcc9e2822690b465a4652cd3bb)
+        ;
+
+        
+    
+    
+            var marker_c1e152ad93522079b631414a5b6f36c8 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_c0a0689835560be8a6c0bacc3f5916a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c1e152ad93522079b631414a5b6f36c8.setIcon(icon_c0a0689835560be8a6c0bacc3f5916a4);
+        
+    
+        var popup_4fa4e78e906f729cc26df4ee65cb0cb3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da19d4973f2cebea9ab9f4506fd2b9a9 = $(`<div id="html_da19d4973f2cebea9ab9f4506fd2b9a9" style="width: 100.0%; height: 100.0%;">TAGBAM II (19 votes, Outlier Score: 26.807228915662648)</div>`)[0];
+                popup_4fa4e78e906f729cc26df4ee65cb0cb3.setContent(html_da19d4973f2cebea9ab9f4506fd2b9a9);
+            
+        
+
+        marker_c1e152ad93522079b631414a5b6f36c8.bindPopup(popup_4fa4e78e906f729cc26df4ee65cb0cb3)
+        ;
+
+        
+    
+    
+            var marker_53ffb8e3ea0bae42c708d8683656fb83 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_f1373533e49997442f37c5cde7baa908 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_53ffb8e3ea0bae42c708d8683656fb83.setIcon(icon_f1373533e49997442f37c5cde7baa908);
+        
+    
+        var popup_ca2de2f9b31a1bfb30dcfa458677bf8a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6df1ba9c0e4c8e2145ecd7988113fdc9 = $(`<div id="html_6df1ba9c0e4c8e2145ecd7988113fdc9" style="width: 100.0%; height: 100.0%;">KABONG (9 votes, Outlier Score: 36.80722891566265)</div>`)[0];
+                popup_ca2de2f9b31a1bfb30dcfa458677bf8a.setContent(html_6df1ba9c0e4c8e2145ecd7988113fdc9);
+            
+        
+
+        marker_53ffb8e3ea0bae42c708d8683656fb83.bindPopup(popup_ca2de2f9b31a1bfb30dcfa458677bf8a)
+        ;
+
+        
+    
+    
+            var marker_83a8f2c86987e6148fa7dae7e07c51bc = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_d745fe64a7c4de09794bc5fe83ac8f90 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_83a8f2c86987e6148fa7dae7e07c51bc.setIcon(icon_d745fe64a7c4de09794bc5fe83ac8f90);
+        
+    
+        var popup_f6870b4d2c6cad5a262e4844828b2080 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2eb3f55f749d176f97b098f443520e1 = $(`<div id="html_f2eb3f55f749d176f97b098f443520e1" style="width: 100.0%; height: 100.0%;">TOKANG 11 (27 votes, Outlier Score: 18.807228915662648)</div>`)[0];
+                popup_f6870b4d2c6cad5a262e4844828b2080.setContent(html_f2eb3f55f749d176f97b098f443520e1);
+            
+        
+
+        marker_83a8f2c86987e6148fa7dae7e07c51bc.bindPopup(popup_f6870b4d2c6cad5a262e4844828b2080)
+        ;
+
+        
+    
+    
+            var marker_124f65ef7fe304c1eca50c5d910d9300 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_21a61ccc4208055acf8aab6cb1dca652 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_124f65ef7fe304c1eca50c5d910d9300.setIcon(icon_21a61ccc4208055acf8aab6cb1dca652);
+        
+    
+        var popup_90519ee5a91c1c10076a6084f21ac533 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3c6254b44c0cd5b9c1a449b816f797b = $(`<div id="html_c3c6254b44c0cd5b9c1a449b816f797b" style="width: 100.0%; height: 100.0%;">ZARON VILLAGE 1 (334 votes, Outlier Score: 288.1927710843373)</div>`)[0];
+                popup_90519ee5a91c1c10076a6084f21ac533.setContent(html_c3c6254b44c0cd5b9c1a449b816f797b);
+            
+        
+
+        marker_124f65ef7fe304c1eca50c5d910d9300.bindPopup(popup_90519ee5a91c1c10076a6084f21ac533)
+        ;
+
+        
+    
+    
+            var marker_7d9dab2d1c44b11b34cf04deb1c4a389 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_ec8369822dc8350886ce9ae67ee8c1c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7d9dab2d1c44b11b34cf04deb1c4a389.setIcon(icon_ec8369822dc8350886ce9ae67ee8c1c4);
+        
+    
+        var popup_5e988935dbf0ffe41a90b585dfedadd9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c6ce87967836642b0311620f993014a = $(`<div id="html_8c6ce87967836642b0311620f993014a" style="width: 100.0%; height: 100.0%;">BAKIN KOGI PRIM. SCHOOL  II (30 votes, Outlier Score: 15.807228915662648)</div>`)[0];
+                popup_5e988935dbf0ffe41a90b585dfedadd9.setContent(html_8c6ce87967836642b0311620f993014a);
+            
+        
+
+        marker_7d9dab2d1c44b11b34cf04deb1c4a389.bindPopup(popup_5e988935dbf0ffe41a90b585dfedadd9)
+        ;
+
+        
+    
+    
+            var marker_a5f86a63bd0e5a1857745f9ea4905eca = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_6cdff049d1db31695493e94707f678bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a5f86a63bd0e5a1857745f9ea4905eca.setIcon(icon_6cdff049d1db31695493e94707f678bc);
+        
+    
+        var popup_75cfb53de22168c728c2043d214c5ca0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_22c16558762e504d23be27d35d999b25 = $(`<div id="html_22c16558762e504d23be27d35d999b25" style="width: 100.0%; height: 100.0%;">GAFAT VILLAGE (11 votes, Outlier Score: 34.80722891566265)</div>`)[0];
+                popup_75cfb53de22168c728c2043d214c5ca0.setContent(html_22c16558762e504d23be27d35d999b25);
+            
+        
+
+        marker_a5f86a63bd0e5a1857745f9ea4905eca.bindPopup(popup_75cfb53de22168c728c2043d214c5ca0)
+        ;
+
+        
+    
+    
+            var marker_b4298842b1cb431a69fef39214d9a1a1 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_c8bddec4eac817dffbecb6438b554776 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b4298842b1cb431a69fef39214d9a1a1.setIcon(icon_c8bddec4eac817dffbecb6438b554776);
+        
+    
+        var popup_1a1dd889df5478dfaba1e2fe6aa03c7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc2fc0331dc35b0982321e50a0dfa770 = $(`<div id="html_dc2fc0331dc35b0982321e50a0dfa770" style="width: 100.0%; height: 100.0%;">WEREH VILLAGE (122 votes, Outlier Score: 76.19277108433735)</div>`)[0];
+                popup_1a1dd889df5478dfaba1e2fe6aa03c7f.setContent(html_dc2fc0331dc35b0982321e50a0dfa770);
+            
+        
+
+        marker_b4298842b1cb431a69fef39214d9a1a1.bindPopup(popup_1a1dd889df5478dfaba1e2fe6aa03c7f)
+        ;
+
+        
+    
+    
+            var marker_09bdec72678e708b6830f5462781181a = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_f5f394bce52916fe3ad282da39531fb2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_09bdec72678e708b6830f5462781181a.setIcon(icon_f5f394bce52916fe3ad282da39531fb2);
+        
+    
+        var popup_5c61a007fed2c41cef5305c9fc0817f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e93ba56fb57fc10c1ab0edf82ec55fc9 = $(`<div id="html_e93ba56fb57fc10c1ab0edf82ec55fc9" style="width: 100.0%; height: 100.0%;">DOROWA BABUJE 1 (63 votes, Outlier Score: 17.192771084337352)</div>`)[0];
+                popup_5c61a007fed2c41cef5305c9fc0817f9.setContent(html_e93ba56fb57fc10c1ab0edf82ec55fc9);
+            
+        
+
+        marker_09bdec72678e708b6830f5462781181a.bindPopup(popup_5c61a007fed2c41cef5305c9fc0817f9)
+        ;
+
+        
+    
+    
+            var marker_215364a5f0ad0ef1f7d9d108641f40c5 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_21eff427e4c0c46b26a791b2e83ca7f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_215364a5f0ad0ef1f7d9d108641f40c5.setIcon(icon_21eff427e4c0c46b26a791b2e83ca7f6);
+        
+    
+        var popup_66b3ec6d41521b2eb216bde9c69ff6ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_162decb92fc48b2ae6c9ad42b4d0166a = $(`<div id="html_162decb92fc48b2ae6c9ad42b4d0166a" style="width: 100.0%; height: 100.0%;">RAPWOMOL (42 votes, Outlier Score: 3.807228915662648)</div>`)[0];
+                popup_66b3ec6d41521b2eb216bde9c69ff6ca.setContent(html_162decb92fc48b2ae6c9ad42b4d0166a);
+            
+        
+
+        marker_215364a5f0ad0ef1f7d9d108641f40c5.bindPopup(popup_66b3ec6d41521b2eb216bde9c69ff6ca)
+        ;
+
+        
+    
+    
+            var marker_247f7522085b13b837433c4260f75a83 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_011d280e313c5a8fb9f9ee10286373a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_247f7522085b13b837433c4260f75a83.setIcon(icon_011d280e313c5a8fb9f9ee10286373a1);
+        
+    
+        var popup_30845bd289da45ce60c1b95194f49abe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce735e576ec7b4c1a25e9aa5c858473d = $(`<div id="html_ce735e576ec7b4c1a25e9aa5c858473d" style="width: 100.0%; height: 100.0%;">JOK VILLAGE (6 votes, Outlier Score: 39.80722891566265)</div>`)[0];
+                popup_30845bd289da45ce60c1b95194f49abe.setContent(html_ce735e576ec7b4c1a25e9aa5c858473d);
+            
+        
+
+        marker_247f7522085b13b837433c4260f75a83.bindPopup(popup_30845bd289da45ce60c1b95194f49abe)
+        ;
+
+        
+    
+    
+            var marker_eafc0b4feba9cfac2eea4ba543a48df6 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_7d8e6983e63f8d48337274da2b7b30e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_eafc0b4feba9cfac2eea4ba543a48df6.setIcon(icon_7d8e6983e63f8d48337274da2b7b30e2);
+        
+    
+        var popup_04a7a8977cc8c1860040477e3b4535bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_231e0a76db2d0494e31b3bbd29546892 = $(`<div id="html_231e0a76db2d0494e31b3bbd29546892" style="width: 100.0%; height: 100.0%;">LOHALA (20 votes, Outlier Score: 25.807228915662648)</div>`)[0];
+                popup_04a7a8977cc8c1860040477e3b4535bd.setContent(html_231e0a76db2d0494e31b3bbd29546892);
+            
+        
+
+        marker_eafc0b4feba9cfac2eea4ba543a48df6.bindPopup(popup_04a7a8977cc8c1860040477e3b4535bd)
+        ;
+
+        
+    
+    
+            var marker_03419fbef7e0ba3b4b5bbacbe35a9ca0 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_9b3b869c442b656d0c1295c66a165f1e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_03419fbef7e0ba3b4b5bbacbe35a9ca0.setIcon(icon_9b3b869c442b656d0c1295c66a165f1e);
+        
+    
+        var popup_07b51af392d706b737825bcd447f3674 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c33d89c04adc982c3c6bdca784d1de26 = $(`<div id="html_c33d89c04adc982c3c6bdca784d1de26" style="width: 100.0%; height: 100.0%;">BWOM (42 votes, Outlier Score: 3.807228915662648)</div>`)[0];
+                popup_07b51af392d706b737825bcd447f3674.setContent(html_c33d89c04adc982c3c6bdca784d1de26);
+            
+        
+
+        marker_03419fbef7e0ba3b4b5bbacbe35a9ca0.bindPopup(popup_07b51af392d706b737825bcd447f3674)
+        ;
+
+        
+    
+    
+            var marker_efef032f45efb1aad046a48fe6cbc1a0 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_94332339e467e2b5064e7171d25aa906 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_efef032f45efb1aad046a48fe6cbc1a0.setIcon(icon_94332339e467e2b5064e7171d25aa906);
+        
+    
+        var popup_d73633c23f077aaaf2ce84306e9092b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e64efd5bedfd97661f7fcb0f2884e34 = $(`<div id="html_7e64efd5bedfd97661f7fcb0f2884e34" style="width: 100.0%; height: 100.0%;">BET VILLAGE (43 votes, Outlier Score: 2.807228915662648)</div>`)[0];
+                popup_d73633c23f077aaaf2ce84306e9092b3.setContent(html_7e64efd5bedfd97661f7fcb0f2884e34);
+            
+        
+
+        marker_efef032f45efb1aad046a48fe6cbc1a0.bindPopup(popup_d73633c23f077aaaf2ce84306e9092b3)
+        ;
+
+        
+    
+    
+            var marker_e123f029c5550f9f5e4a9577d60d1f75 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_249f485d6d9c08e12dcaa6540263e055 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e123f029c5550f9f5e4a9577d60d1f75.setIcon(icon_249f485d6d9c08e12dcaa6540263e055);
+        
+    
+        var popup_40b92f70911ad41b733befc9de419f8e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18e14402f06b959b45a06a9fef5a226e = $(`<div id="html_18e14402f06b959b45a06a9fef5a226e" style="width: 100.0%; height: 100.0%;">DOROWA BABUJE II (22 votes, Outlier Score: 23.807228915662648)</div>`)[0];
+                popup_40b92f70911ad41b733befc9de419f8e.setContent(html_18e14402f06b959b45a06a9fef5a226e);
+            
+        
+
+        marker_e123f029c5550f9f5e4a9577d60d1f75.bindPopup(popup_40b92f70911ad41b733befc9de419f8e)
+        ;
+
+        
+    
+    
+            var marker_d977b7cf907208089cb9b28fea5585d3 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_1a06f266c553c3326f3f1b4332e5a201 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d977b7cf907208089cb9b28fea5585d3.setIcon(icon_1a06f266c553c3326f3f1b4332e5a201);
+        
+    
+        var popup_18cbedf8340945c1b857f5b4bbf71625 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e5c4267ccc351354ba8f590490b42a9 = $(`<div id="html_8e5c4267ccc351354ba8f590490b42a9" style="width: 100.0%; height: 100.0%;">DOROWA BABUJE III (37 votes, Outlier Score: 8.807228915662648)</div>`)[0];
+                popup_18cbedf8340945c1b857f5b4bbf71625.setContent(html_8e5c4267ccc351354ba8f590490b42a9);
+            
+        
+
+        marker_d977b7cf907208089cb9b28fea5585d3.bindPopup(popup_18cbedf8340945c1b857f5b4bbf71625)
+        ;
+
+        
+    
+    
+            var marker_447ba265a724aacb385eb450ced735ab = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_231078b6e92362351200a753da27e4d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_447ba265a724aacb385eb450ced735ab.setIcon(icon_231078b6e92362351200a753da27e4d6);
+        
+    
+        var popup_18317cb369ca992a425e3743124ae6f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d4fd5539cfa927ce9fc6021cdd6fc47e = $(`<div id="html_d4fd5539cfa927ce9fc6021cdd6fc47e" style="width: 100.0%; height: 100.0%;">GANANDAJI TOWN (47 votes, Outlier Score: 1.1927710843373518)</div>`)[0];
+                popup_18317cb369ca992a425e3743124ae6f6.setContent(html_d4fd5539cfa927ce9fc6021cdd6fc47e);
+            
+        
+
+        marker_447ba265a724aacb385eb450ced735ab.bindPopup(popup_18317cb369ca992a425e3743124ae6f6)
+        ;
+
+        
+    
+    
+            var marker_2844c83886628a70093567138de2a4ba = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_8cd41f73464d59f78519097478cfd18c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2844c83886628a70093567138de2a4ba.setIcon(icon_8cd41f73464d59f78519097478cfd18c);
+        
+    
+        var popup_152fb5de7f95c817f458c099b77381db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3afe99b81331056b277b30626090a57 = $(`<div id="html_b3afe99b81331056b277b30626090a57" style="width: 100.0%; height: 100.0%;">MAZAT (26 votes, Outlier Score: 19.807228915662648)</div>`)[0];
+                popup_152fb5de7f95c817f458c099b77381db.setContent(html_b3afe99b81331056b277b30626090a57);
+            
+        
+
+        marker_2844c83886628a70093567138de2a4ba.bindPopup(popup_152fb5de7f95c817f458c099b77381db)
+        ;
+
+        
+    
+    
+            var marker_c8cac33f05bf245869cf7dd47f3339ed = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_8a8273283fd9e837fe48cdc22ce84ac6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c8cac33f05bf245869cf7dd47f3339ed.setIcon(icon_8a8273283fd9e837fe48cdc22ce84ac6);
+        
+    
+        var popup_e541527d761870c17e98cc9b7384f0fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3c67690f39f3f027d1cd37ef19b50d2 = $(`<div id="html_a3c67690f39f3f027d1cd37ef19b50d2" style="width: 100.0%; height: 100.0%;">MANJOHOTA TOWN (33 votes, Outlier Score: 12.807228915662648)</div>`)[0];
+                popup_e541527d761870c17e98cc9b7384f0fa.setContent(html_a3c67690f39f3f027d1cd37ef19b50d2);
+            
+        
+
+        marker_c8cac33f05bf245869cf7dd47f3339ed.bindPopup(popup_e541527d761870c17e98cc9b7384f0fa)
+        ;
+
+        
+    
+    
+            var marker_1384749b76b29373be00e2c3e3c5dde6 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_3f27bcceb7e9817c0180926ae59cd20f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1384749b76b29373be00e2c3e3c5dde6.setIcon(icon_3f27bcceb7e9817c0180926ae59cd20f);
+        
+    
+        var popup_3212db13052ecd7fbafb1c501967ff3b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8da132594184cf91a7269b145ec6eb4 = $(`<div id="html_b8da132594184cf91a7269b145ec6eb4" style="width: 100.0%; height: 100.0%;">BUKA BAKWAI TOWN (4 votes, Outlier Score: 41.80722891566265)</div>`)[0];
+                popup_3212db13052ecd7fbafb1c501967ff3b.setContent(html_b8da132594184cf91a7269b145ec6eb4);
+            
+        
+
+        marker_1384749b76b29373be00e2c3e3c5dde6.bindPopup(popup_3212db13052ecd7fbafb1c501967ff3b)
+        ;
+
+        
+    
+    
+            var marker_53560c24660f3c81187c4b0d1d3cae30 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_5df9634854ca4e29e4b9ffcc328a3f67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_53560c24660f3c81187c4b0d1d3cae30.setIcon(icon_5df9634854ca4e29e4b9ffcc328a3f67);
+        
+    
+        var popup_2cb6e2c9b7aee6c3b3959295ad7d6012 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3335e1dd1b1857079d5b0b93183b68aa = $(`<div id="html_3335e1dd1b1857079d5b0b93183b68aa" style="width: 100.0%; height: 100.0%;">RITE RAZEK (40 votes, Outlier Score: 5.807228915662648)</div>`)[0];
+                popup_2cb6e2c9b7aee6c3b3959295ad7d6012.setContent(html_3335e1dd1b1857079d5b0b93183b68aa);
+            
+        
+
+        marker_53560c24660f3c81187c4b0d1d3cae30.bindPopup(popup_2cb6e2c9b7aee6c3b3959295ad7d6012)
+        ;
+
+        
+    
+    
+            var marker_a3113eba6ee3540b04727e530d680f78 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_e54b20f7a10d07fde1ce65e61f55c7d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a3113eba6ee3540b04727e530d680f78.setIcon(icon_e54b20f7a10d07fde1ce65e61f55c7d5);
+        
+    
+        var popup_34a0c9b48c6c9e83089df10bd6a538e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_543be9dfc5ec54d2ae1370a489f4118c = $(`<div id="html_543be9dfc5ec54d2ae1370a489f4118c" style="width: 100.0%; height: 100.0%;">RAFAN RAKU RABWAK (36 votes, Outlier Score: 9.807228915662648)</div>`)[0];
+                popup_34a0c9b48c6c9e83089df10bd6a538e7.setContent(html_543be9dfc5ec54d2ae1370a489f4118c);
+            
+        
+
+        marker_a3113eba6ee3540b04727e530d680f78.bindPopup(popup_34a0c9b48c6c9e83089df10bd6a538e7)
+        ;
+
+        
+    
+    
+            var marker_d085d293b94da9947dcc011b7e83eac2 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_74889220ea6e1aaed7da07388460663f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d085d293b94da9947dcc011b7e83eac2.setIcon(icon_74889220ea6e1aaed7da07388460663f);
+        
+    
+        var popup_5b0bb4d2dd89809bc8628fed459c1ee8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_28e884c574b3a75d24ec0bbfbfd32d7f = $(`<div id="html_28e884c574b3a75d24ec0bbfbfd32d7f" style="width: 100.0%; height: 100.0%;">RAWURU PRIM. SCHOOL (134 votes, Outlier Score: 88.19277108433735)</div>`)[0];
+                popup_5b0bb4d2dd89809bc8628fed459c1ee8.setContent(html_28e884c574b3a75d24ec0bbfbfd32d7f);
+            
+        
+
+        marker_d085d293b94da9947dcc011b7e83eac2.bindPopup(popup_5b0bb4d2dd89809bc8628fed459c1ee8)
+        ;
+
+        
+    
+    
+            var marker_b92660e58ebf89a72a912b1eb83605b4 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_45ffaf43c23420c50911d4d5c4b3b757 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b92660e58ebf89a72a912b1eb83605b4.setIcon(icon_45ffaf43c23420c50911d4d5c4b3b757);
+        
+    
+        var popup_75fb3e3d5330769cec1bd29d9f52fc9a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aac1c535a34f805fa6736d61b251cf54 = $(`<div id="html_aac1c535a34f805fa6736d61b251cf54" style="width: 100.0%; height: 100.0%;">NDING SUSUT (100 votes, Outlier Score: 54.19277108433735)</div>`)[0];
+                popup_75fb3e3d5330769cec1bd29d9f52fc9a.setContent(html_aac1c535a34f805fa6736d61b251cf54);
+            
+        
+
+        marker_b92660e58ebf89a72a912b1eb83605b4.bindPopup(popup_75fb3e3d5330769cec1bd29d9f52fc9a)
+        ;
+
+        
+    
+    
+            var marker_17ae7fbae23d7e2371b9fc72b19ed6e5 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_97d8527e5718ed6e973efb2b8bd04bb7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_17ae7fbae23d7e2371b9fc72b19ed6e5.setIcon(icon_97d8527e5718ed6e973efb2b8bd04bb7);
+        
+    
+        var popup_760cc608dbc28572ea1ca3c6af544de3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c75de052079856e5e81d79f64e9c587f = $(`<div id="html_c75de052079856e5e81d79f64e9c587f" style="width: 100.0%; height: 100.0%;">RASHWEI (76 votes, Outlier Score: 30.192771084337352)</div>`)[0];
+                popup_760cc608dbc28572ea1ca3c6af544de3.setContent(html_c75de052079856e5e81d79f64e9c587f);
+            
+        
+
+        marker_17ae7fbae23d7e2371b9fc72b19ed6e5.bindPopup(popup_760cc608dbc28572ea1ca3c6af544de3)
+        ;
+
+        
+    
+    
+            var marker_c0e19aff4a18e14aed0e64ae9b2dda58 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_df481dae52fc1f6ffc6d470e8e815817 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c0e19aff4a18e14aed0e64ae9b2dda58.setIcon(icon_df481dae52fc1f6ffc6d470e8e815817);
+        
+    
+        var popup_a5942307dc01ccdb9df02ce7e919d415 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9db7a8d20a3e7430cf4d4e691af69ee6 = $(`<div id="html_9db7a8d20a3e7430cf4d4e691af69ee6" style="width: 100.0%; height: 100.0%;">KANGASHO VILLAGE (91 votes, Outlier Score: 45.19277108433735)</div>`)[0];
+                popup_a5942307dc01ccdb9df02ce7e919d415.setContent(html_9db7a8d20a3e7430cf4d4e691af69ee6);
+            
+        
+
+        marker_c0e19aff4a18e14aed0e64ae9b2dda58.bindPopup(popup_a5942307dc01ccdb9df02ce7e919d415)
+        ;
+
+        
+    
+    
+            var marker_e16d5b2236babcf987355201c13cec77 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_ab7238a96ad2084a491a3c8a4dd13433 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e16d5b2236babcf987355201c13cec77.setIcon(icon_ab7238a96ad2084a491a3c8a4dd13433);
+        
+    
+        var popup_498993f1b19201c3e8c6fa9195d62b66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_71681157f402e55db88782cd9d7cdea3 = $(`<div id="html_71681157f402e55db88782cd9d7cdea3" style="width: 100.0%; height: 100.0%;">NDING PRI. SCH (49 votes, Outlier Score: 3.192771084337352)</div>`)[0];
+                popup_498993f1b19201c3e8c6fa9195d62b66.setContent(html_71681157f402e55db88782cd9d7cdea3);
+            
+        
+
+        marker_e16d5b2236babcf987355201c13cec77.bindPopup(popup_498993f1b19201c3e8c6fa9195d62b66)
+        ;
+
+        
+    
+    
+            var marker_0c57e4f18d9c4306fab53def3df1b4a7 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_96164127ed506d763410953f4a2a55b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0c57e4f18d9c4306fab53def3df1b4a7.setIcon(icon_96164127ed506d763410953f4a2a55b3);
+        
+    
+        var popup_bd2d86107fc7701b52e2194eaab18215 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40e354f5c02509389df21d5843330c13 = $(`<div id="html_40e354f5c02509389df21d5843330c13" style="width: 100.0%; height: 100.0%;">DOROWA TSOHO (80 votes, Outlier Score: 34.19277108433735)</div>`)[0];
+                popup_bd2d86107fc7701b52e2194eaab18215.setContent(html_40e354f5c02509389df21d5843330c13);
+            
+        
+
+        marker_0c57e4f18d9c4306fab53def3df1b4a7.bindPopup(popup_bd2d86107fc7701b52e2194eaab18215)
+        ;
+
+        
+    
+    
+            var marker_391dae4baa95c5718063cfc6775ef866 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_eecbb735ab94985ea8fbb7fccd29a1e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_391dae4baa95c5718063cfc6775ef866.setIcon(icon_eecbb735ab94985ea8fbb7fccd29a1e6);
+        
+    
+        var popup_43107a0e6e0ef63b020c0059b38f382d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_43cfb9602503311b19cb639ee6cd7941 = $(`<div id="html_43cfb9602503311b19cb639ee6cd7941" style="width: 100.0%; height: 100.0%;">NFABON (36 votes, Outlier Score: 9.807228915662648)</div>`)[0];
+                popup_43107a0e6e0ef63b020c0059b38f382d.setContent(html_43cfb9602503311b19cb639ee6cd7941);
+            
+        
+
+        marker_391dae4baa95c5718063cfc6775ef866.bindPopup(popup_43107a0e6e0ef63b020c0059b38f382d)
+        ;
+
+        
+    
+    
+            var marker_64adcc7c2b336000f083d13793372396 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_00475689fb07284d66ba5e2d0e066127 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_64adcc7c2b336000f083d13793372396.setIcon(icon_00475689fb07284d66ba5e2d0e066127);
+        
+    
+        var popup_805cc259482cf51bf7d9b09dd80ecfe1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8bb5d2ffc2935d9132e3d08a82252897 = $(`<div id="html_8bb5d2ffc2935d9132e3d08a82252897" style="width: 100.0%; height: 100.0%;">BATABASIR I (95 votes, Outlier Score: 49.19277108433735)</div>`)[0];
+                popup_805cc259482cf51bf7d9b09dd80ecfe1.setContent(html_8bb5d2ffc2935d9132e3d08a82252897);
+            
+        
+
+        marker_64adcc7c2b336000f083d13793372396.bindPopup(popup_805cc259482cf51bf7d9b09dd80ecfe1)
+        ;
+
+        
+    
+    
+            var marker_0b0d83f2a37b7654e3f37884c7aa4304 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_12c91b68fe9d3b3c3b11ac39208793f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0b0d83f2a37b7654e3f37884c7aa4304.setIcon(icon_12c91b68fe9d3b3c3b11ac39208793f5);
+        
+    
+        var popup_4f504682e92ce939ac6c3c395259fa16 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_273d927c47d36b7550938f74a13cc207 = $(`<div id="html_273d927c47d36b7550938f74a13cc207" style="width: 100.0%; height: 100.0%;">BATABASIR II (40 votes, Outlier Score: 5.807228915662648)</div>`)[0];
+                popup_4f504682e92ce939ac6c3c395259fa16.setContent(html_273d927c47d36b7550938f74a13cc207);
+            
+        
+
+        marker_0b0d83f2a37b7654e3f37884c7aa4304.bindPopup(popup_4f504682e92ce939ac6c3c395259fa16)
+        ;
+
+        
+    
+    
+            var marker_1373198c7ba17f43f3642908f53f3b04 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_0698f3d9b007d49523d37d5b148aeb0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1373198c7ba17f43f3642908f53f3b04.setIcon(icon_0698f3d9b007d49523d37d5b148aeb0d);
+        
+    
+        var popup_df2ee79c1a71ab90061862664f4d73de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b2e68f346f743b4139b7188200ba6e1f = $(`<div id="html_b2e68f346f743b4139b7188200ba6e1f" style="width: 100.0%; height: 100.0%;">JANKOP NZIRING (58 votes, Outlier Score: 12.192771084337352)</div>`)[0];
+                popup_df2ee79c1a71ab90061862664f4d73de.setContent(html_b2e68f346f743b4139b7188200ba6e1f);
+            
+        
+
+        marker_1373198c7ba17f43f3642908f53f3b04.bindPopup(popup_df2ee79c1a71ab90061862664f4d73de)
+        ;
+
+        
+    
+    
+            var marker_0b51e77bdb4a4f11cb8523667ebf7da5 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_bcaad38614bfd38b442992ba817aa2cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0b51e77bdb4a4f11cb8523667ebf7da5.setIcon(icon_bcaad38614bfd38b442992ba817aa2cc);
+        
+    
+        var popup_251a3517df356971f422c7659996f881 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_37f9cbfb1db4bd88e0b5eb82f9049ed0 = $(`<div id="html_37f9cbfb1db4bd88e0b5eb82f9049ed0" style="width: 100.0%; height: 100.0%;">GARA KUGOT (187 votes, Outlier Score: 141.19277108433735)</div>`)[0];
+                popup_251a3517df356971f422c7659996f881.setContent(html_37f9cbfb1db4bd88e0b5eb82f9049ed0);
+            
+        
+
+        marker_0b51e77bdb4a4f11cb8523667ebf7da5.bindPopup(popup_251a3517df356971f422c7659996f881)
+        ;
+
+        
+    
+    
+            var marker_e0b7ac9419662e09166ba9b3dd3c3e06 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_7388fb6b98721b3856bdf91e64a89511 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e0b7ac9419662e09166ba9b3dd3c3e06.setIcon(icon_7388fb6b98721b3856bdf91e64a89511);
+        
+    
+        var popup_8ea0d77a6ef4e14e2503b6f1503660ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e01d9ffda060e34393c21724b7338029 = $(`<div id="html_e01d9ffda060e34393c21724b7338029" style="width: 100.0%; height: 100.0%;">SHAMASHOK/TUSUNG (52 votes, Outlier Score: 6.192771084337352)</div>`)[0];
+                popup_8ea0d77a6ef4e14e2503b6f1503660ee.setContent(html_e01d9ffda060e34393c21724b7338029);
+            
+        
+
+        marker_e0b7ac9419662e09166ba9b3dd3c3e06.bindPopup(popup_8ea0d77a6ef4e14e2503b6f1503660ee)
+        ;
+
+        
+    
+    
+            var marker_4c13b25f2954161fc6fb29ae90f1005a = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_dfe3bf6716b786107d255c7dd6a242c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4c13b25f2954161fc6fb29ae90f1005a.setIcon(icon_dfe3bf6716b786107d255c7dd6a242c0);
+        
+    
+        var popup_2de27b3fab55bc0c8cdb2700c51287aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be8e2352564d2e5b75f9ec1763816d03 = $(`<div id="html_be8e2352564d2e5b75f9ec1763816d03" style="width: 100.0%; height: 100.0%;">TAPWANG FAN LOH (75 votes, Outlier Score: 29.192771084337352)</div>`)[0];
+                popup_2de27b3fab55bc0c8cdb2700c51287aa.setContent(html_be8e2352564d2e5b75f9ec1763816d03);
+            
+        
+
+        marker_4c13b25f2954161fc6fb29ae90f1005a.bindPopup(popup_2de27b3fab55bc0c8cdb2700c51287aa)
+        ;
+
+        
+    
+    
+            var marker_f3f9cb0f95c5f2b852a0133775cac586 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_5fd8cad5bcac387f033907608e58b5fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f3f9cb0f95c5f2b852a0133775cac586.setIcon(icon_5fd8cad5bcac387f033907608e58b5fa);
+        
+    
+        var popup_98b6c7ac5b9b6fe30e16b57ee0a7aa9b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_059544c1646bcc54cc8de1a6bdcb6c27 = $(`<div id="html_059544c1646bcc54cc8de1a6bdcb6c27" style="width: 100.0%; height: 100.0%;">ZABOT VILLAGE (80 votes, Outlier Score: 34.19277108433735)</div>`)[0];
+                popup_98b6c7ac5b9b6fe30e16b57ee0a7aa9b.setContent(html_059544c1646bcc54cc8de1a6bdcb6c27);
+            
+        
+
+        marker_f3f9cb0f95c5f2b852a0133775cac586.bindPopup(popup_98b6c7ac5b9b6fe30e16b57ee0a7aa9b)
+        ;
+
+        
+    
+    
+            var marker_c119cd386f41def39c69e97fdc58a8d7 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_c2d2008ebe384cb9d2e61decd90a9405 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c119cd386f41def39c69e97fdc58a8d7.setIcon(icon_c2d2008ebe384cb9d2e61decd90a9405);
+        
+    
+        var popup_c1e8fc3eba2a8798af1769e895f8289e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d040d4574cfbf3b3063a9d307da2da10 = $(`<div id="html_d040d4574cfbf3b3063a9d307da2da10" style="width: 100.0%; height: 100.0%;">NEWO VILLAGE (49 votes, Outlier Score: 3.192771084337352)</div>`)[0];
+                popup_c1e8fc3eba2a8798af1769e895f8289e.setContent(html_d040d4574cfbf3b3063a9d307da2da10);
+            
+        
+
+        marker_c119cd386f41def39c69e97fdc58a8d7.bindPopup(popup_c1e8fc3eba2a8798af1769e895f8289e)
+        ;
+
+        
+    
+    
+            var marker_55ce71179b274bdb3b337e8408684cb2 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_20b38eca80d894db9a85cdaaff9791a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_55ce71179b274bdb3b337e8408684cb2.setIcon(icon_20b38eca80d894db9a85cdaaff9791a0);
+        
+    
+        var popup_7edfb3954553ff3bcff9c37d4d1ce54a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c515d900accf7668630ccb4b430f8be7 = $(`<div id="html_c515d900accf7668630ccb4b430f8be7" style="width: 100.0%; height: 100.0%;">KAMANG VILLAGE (43 votes, Outlier Score: 2.807228915662648)</div>`)[0];
+                popup_7edfb3954553ff3bcff9c37d4d1ce54a.setContent(html_c515d900accf7668630ccb4b430f8be7);
+            
+        
+
+        marker_55ce71179b274bdb3b337e8408684cb2.bindPopup(popup_7edfb3954553ff3bcff9c37d4d1ce54a)
+        ;
+
+        
+    
+    
+            var marker_5080c728740e1eb669653fa6ee4e371a = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_34bc8b9d9aeedb6f5661dc90ba71f164 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5080c728740e1eb669653fa6ee4e371a.setIcon(icon_34bc8b9d9aeedb6f5661dc90ba71f164);
+        
+    
+        var popup_6e0ee93b359d7985804c1bd76ba5e47d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b542a33eb0563c065c7f3dbfb40c364 = $(`<div id="html_6b542a33eb0563c065c7f3dbfb40c364" style="width: 100.0%; height: 100.0%;">LEA PRI SCH REK (24 votes, Outlier Score: 21.807228915662648)</div>`)[0];
+                popup_6e0ee93b359d7985804c1bd76ba5e47d.setContent(html_6b542a33eb0563c065c7f3dbfb40c364);
+            
+        
+
+        marker_5080c728740e1eb669653fa6ee4e371a.bindPopup(popup_6e0ee93b359d7985804c1bd76ba5e47d)
+        ;
+
+        
+    
+    
+            var marker_28ac098cd091a12bd8d1d36f1b651911 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_59fc9ed7763fdb1574f05c09dab57dec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_28ac098cd091a12bd8d1d36f1b651911.setIcon(icon_59fc9ed7763fdb1574f05c09dab57dec);
+        
+    
+        var popup_57a6eb1f6d6b4ee38ffe3cf5a9f2d74b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_acf6e072f4277a438fe39a414a8838b4 = $(`<div id="html_acf6e072f4277a438fe39a414a8838b4" style="width: 100.0%; height: 100.0%;">LEA DAN MANGU (14 votes, Outlier Score: 31.807228915662648)</div>`)[0];
+                popup_57a6eb1f6d6b4ee38ffe3cf5a9f2d74b.setContent(html_acf6e072f4277a438fe39a414a8838b4);
+            
+        
+
+        marker_28ac098cd091a12bd8d1d36f1b651911.bindPopup(popup_57a6eb1f6d6b4ee38ffe3cf5a9f2d74b)
+        ;
+
+        
+    
+    
+            var marker_898242ffacaa3a5e18aab8d19764872b = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_819ad7b89e353affef1db2fe5d9a49b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_898242ffacaa3a5e18aab8d19764872b.setIcon(icon_819ad7b89e353affef1db2fe5d9a49b8);
+        
+    
+        var popup_24051c4ccf61c022bef87420d43c5521 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d55aa3639b0fecbfcc64edb81888e6e = $(`<div id="html_8d55aa3639b0fecbfcc64edb81888e6e" style="width: 100.0%; height: 100.0%;">LGEA LARWIN (53 votes, Outlier Score: 7.192771084337352)</div>`)[0];
+                popup_24051c4ccf61c022bef87420d43c5521.setContent(html_8d55aa3639b0fecbfcc64edb81888e6e);
+            
+        
+
+        marker_898242ffacaa3a5e18aab8d19764872b.bindPopup(popup_24051c4ccf61c022bef87420d43c5521)
+        ;
+
+        
+    
+    
+            var marker_e9e65bd840c98ea8a637d0cf4f8a1ae7 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_edf2af75c4e290c20da4dc14f3cc587b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e9e65bd840c98ea8a637d0cf4f8a1ae7.setIcon(icon_edf2af75c4e290c20da4dc14f3cc587b);
+        
+    
+        var popup_5dea2db46f38e197d5666f8ddfa5eb51 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14550ec63ec097d4f31f5d31576f8d74 = $(`<div id="html_14550ec63ec097d4f31f5d31576f8d74" style="width: 100.0%; height: 100.0%;">TAGBAM IV (0 votes, Outlier Score: 45.80722891566265)</div>`)[0];
+                popup_5dea2db46f38e197d5666f8ddfa5eb51.setContent(html_14550ec63ec097d4f31f5d31576f8d74);
+            
+        
+
+        marker_e9e65bd840c98ea8a637d0cf4f8a1ae7.bindPopup(popup_5dea2db46f38e197d5666f8ddfa5eb51)
+        ;
+
+        
+    
+    
+            var marker_0f85fe3a4b375e1161eef381950431c8 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_18a589a75716d69384c40b5efd5c8a5c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0f85fe3a4b375e1161eef381950431c8.setIcon(icon_18a589a75716d69384c40b5efd5c8a5c);
+        
+    
+        var popup_2c169d25f611dd03b2855d38eb04ebf9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1967929814dbf2a8df945b8145f3751a = $(`<div id="html_1967929814dbf2a8df945b8145f3751a" style="width: 100.0%; height: 100.0%;">KABONG II LGEA LAYOGOT (4 votes, Outlier Score: 41.80722891566265)</div>`)[0];
+                popup_2c169d25f611dd03b2855d38eb04ebf9.setContent(html_1967929814dbf2a8df945b8145f3751a);
+            
+        
+
+        marker_0f85fe3a4b375e1161eef381950431c8.bindPopup(popup_2c169d25f611dd03b2855d38eb04ebf9)
+        ;
+
+        
+    
+    
+            var marker_97444df869a73c29b0d9fc82ea9fab06 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_23844127363d9d1a601a02d9565b7256 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_97444df869a73c29b0d9fc82ea9fab06.setIcon(icon_23844127363d9d1a601a02d9565b7256);
+        
+    
+        var popup_288801556a11640eb297a1d3d82b03c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2cd9dded0b1ffb391c982198997e8fd6 = $(`<div id="html_2cd9dded0b1ffb391c982198997e8fd6" style="width: 100.0%; height: 100.0%;">LEA KPANG (22 votes, Outlier Score: 23.807228915662648)</div>`)[0];
+                popup_288801556a11640eb297a1d3d82b03c7.setContent(html_2cd9dded0b1ffb391c982198997e8fd6);
+            
+        
+
+        marker_97444df869a73c29b0d9fc82ea9fab06.bindPopup(popup_288801556a11640eb297a1d3d82b03c7)
+        ;
+
+        
+    
+    
+            var marker_ea032475348ded7415d6df0dc3d83b81 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_ff419e70d13e95d18e5cd23cfa38d6fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ea032475348ded7415d6df0dc3d83b81.setIcon(icon_ff419e70d13e95d18e5cd23cfa38d6fd);
+        
+    
+        var popup_e27c5c42e0c935d873c35074c2d528e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa06da74160eea469555142d342aa17d = $(`<div id="html_fa06da74160eea469555142d342aa17d" style="width: 100.0%; height: 100.0%;">PHC DOROWA BABUJE (3 votes, Outlier Score: 42.80722891566265)</div>`)[0];
+                popup_e27c5c42e0c935d873c35074c2d528e5.setContent(html_fa06da74160eea469555142d342aa17d);
+            
+        
+
+        marker_ea032475348ded7415d6df0dc3d83b81.bindPopup(popup_e27c5c42e0c935d873c35074c2d528e5)
+        ;
+
+        
+    
+    
+            var marker_ae41ffd9a8404d0dbd0854db632fde32 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_7368762bc42ad0afa32b96b773573d52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ae41ffd9a8404d0dbd0854db632fde32.setIcon(icon_7368762bc42ad0afa32b96b773573d52);
+        
+    
+        var popup_4008c302a06b51562b4dcca15f88f57a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_49385c6965df4f4069af6160106525bd = $(`<div id="html_49385c6965df4f4069af6160106525bd" style="width: 100.0%; height: 100.0%;">BAPTIST SCI PILOT PRI. SCH. (11 votes, Outlier Score: 34.80722891566265)</div>`)[0];
+                popup_4008c302a06b51562b4dcca15f88f57a.setContent(html_49385c6965df4f4069af6160106525bd);
+            
+        
+
+        marker_ae41ffd9a8404d0dbd0854db632fde32.bindPopup(popup_4008c302a06b51562b4dcca15f88f57a)
+        ;
+
+        
+    
+    
+            var marker_3de080f72e5fc37e9e9dff591d7e5f77 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_7dc760e187bdaa89690557207142d6b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3de080f72e5fc37e9e9dff591d7e5f77.setIcon(icon_7dc760e187bdaa89690557207142d6b9);
+        
+    
+        var popup_d761c45d3cb7cebf2c649cb38e55d343 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8684da15d7f8f1242929cc48bd5ce762 = $(`<div id="html_8684da15d7f8f1242929cc48bd5ce762" style="width: 100.0%; height: 100.0%;">LEA PRI SCH RATATIS (2 votes, Outlier Score: 43.80722891566265)</div>`)[0];
+                popup_d761c45d3cb7cebf2c649cb38e55d343.setContent(html_8684da15d7f8f1242929cc48bd5ce762);
+            
+        
+
+        marker_3de080f72e5fc37e9e9dff591d7e5f77.bindPopup(popup_d761c45d3cb7cebf2c649cb38e55d343)
+        ;
+
+        
+    
+    
+            var marker_833c459776aba980f3dda4242c7a21a5 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_3ae4962e7cb2650efac14ab736a2b79a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_833c459776aba980f3dda4242c7a21a5.setIcon(icon_3ae4962e7cb2650efac14ab736a2b79a);
+        
+    
+        var popup_bcf658d30ac5fbdf79c8357da33b180d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2eb93a83474d6d51585aaa68994407df = $(`<div id="html_2eb93a83474d6d51585aaa68994407df" style="width: 100.0%; height: 100.0%;">WEREH TOWN (19 votes, Outlier Score: 26.807228915662648)</div>`)[0];
+                popup_bcf658d30ac5fbdf79c8357da33b180d.setContent(html_2eb93a83474d6d51585aaa68994407df);
+            
+        
+
+        marker_833c459776aba980f3dda4242c7a21a5.bindPopup(popup_bcf658d30ac5fbdf79c8357da33b180d)
+        ;
+
+        
+    
+    
+            var marker_569cb56add9d7d141cfb20c456572aca = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_937394188b69c5737175965c0886b35b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_569cb56add9d7d141cfb20c456572aca.setIcon(icon_937394188b69c5737175965c0886b35b);
+        
+    
+        var popup_ade6d998da889c2364df7486e3830c7a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bbe1330b0cf923d96cd678e4a9923459 = $(`<div id="html_bbe1330b0cf923d96cd678e4a9923459" style="width: 100.0%; height: 100.0%;">GSS ROPP BET SITE (3 votes, Outlier Score: 42.80722891566265)</div>`)[0];
+                popup_ade6d998da889c2364df7486e3830c7a.setContent(html_bbe1330b0cf923d96cd678e4a9923459);
+            
+        
+
+        marker_569cb56add9d7d141cfb20c456572aca.bindPopup(popup_ade6d998da889c2364df7486e3830c7a)
+        ;
+
+        
+    
+    
+            var marker_1ab4cc838d6b8e33b7b26b09a60325a3 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_2c283c0806cb72d06c094a6e6383a584 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1ab4cc838d6b8e33b7b26b09a60325a3.setIcon(icon_2c283c0806cb72d06c094a6e6383a584);
+        
+    
+        var popup_2d7424c5e948de368850766bd1fe01c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eecb15a2b1327d9be3b33f2acac08f6e = $(`<div id="html_eecb15a2b1327d9be3b33f2acac08f6e" style="width: 100.0%; height: 100.0%;">GENERAL HOSPITAL B/LADI (33 votes, Outlier Score: 12.807228915662648)</div>`)[0];
+                popup_2d7424c5e948de368850766bd1fe01c5.setContent(html_eecb15a2b1327d9be3b33f2acac08f6e);
+            
+        
+
+        marker_1ab4cc838d6b8e33b7b26b09a60325a3.bindPopup(popup_2d7424c5e948de368850766bd1fe01c5)
+        ;
+
+        
+    
+    
+            var marker_3ffcb2eb22ff4fcd0ce93e958898b786 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_eae11d165fd055d20d877fbb51c1241b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3ffcb2eb22ff4fcd0ce93e958898b786.setIcon(icon_eae11d165fd055d20d877fbb51c1241b);
+        
+    
+        var popup_64497de296a4ed43c18bf7bb4abd7609 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a1262c46e4a9715cc83729434140d11d = $(`<div id="html_a1262c46e4a9715cc83729434140d11d" style="width: 100.0%; height: 100.0%;">MKT SQUARE GANA ROPP (8 votes, Outlier Score: 37.80722891566265)</div>`)[0];
+                popup_64497de296a4ed43c18bf7bb4abd7609.setContent(html_a1262c46e4a9715cc83729434140d11d);
+            
+        
+
+        marker_3ffcb2eb22ff4fcd0ce93e958898b786.bindPopup(popup_64497de296a4ed43c18bf7bb4abd7609)
+        ;
+
+        
+    
+    
+            var marker_5d9787e59a13b4bdda917ec10fe1eeb4 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_e0fbfb2a3058e72186ed27b809c36467 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5d9787e59a13b4bdda917ec10fe1eeb4.setIcon(icon_e0fbfb2a3058e72186ed27b809c36467);
+        
+    
+        var popup_8fe8b1e6d6dc78ec1ad29ce1637c6386 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b96461e12a5909f2453a3a13cef5100e = $(`<div id="html_b96461e12a5909f2453a3a13cef5100e" style="width: 100.0%; height: 100.0%;">OPSH BORE HOLE GANA ROPP (2 votes, Outlier Score: 43.80722891566265)</div>`)[0];
+                popup_8fe8b1e6d6dc78ec1ad29ce1637c6386.setContent(html_b96461e12a5909f2453a3a13cef5100e);
+            
+        
+
+        marker_5d9787e59a13b4bdda917ec10fe1eeb4.bindPopup(popup_8fe8b1e6d6dc78ec1ad29ce1637c6386)
+        ;
+
+        
+    
+    
+            var marker_7ba0b52e2fd5e89b692ac6f5cd200fab = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_729b5158b64c6be9cbd8615fa28ff66a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7ba0b52e2fd5e89b692ac6f5cd200fab.setIcon(icon_729b5158b64c6be9cbd8615fa28ff66a);
+        
+    
+        var popup_308c4c8af27824bf03a9fb4d3fd9410e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc03e243b0073ce071c95e66a9106322 = $(`<div id="html_fc03e243b0073ce071c95e66a9106322" style="width: 100.0%; height: 100.0%;">LEA PRI SCH KUBA B/LADI (6 votes, Outlier Score: 39.80722891566265)</div>`)[0];
+                popup_308c4c8af27824bf03a9fb4d3fd9410e.setContent(html_fc03e243b0073ce071c95e66a9106322);
+            
+        
+
+        marker_7ba0b52e2fd5e89b692ac6f5cd200fab.bindPopup(popup_308c4c8af27824bf03a9fb4d3fd9410e)
+        ;
+
+        
+    
+    
+            var marker_578bdfb11ebc06a7f92b1390de1a3582 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_1d318cb4bd5505e9beb33df7f9d66750 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_578bdfb11ebc06a7f92b1390de1a3582.setIcon(icon_1d318cb4bd5505e9beb33df7f9d66750);
+        
+    
+        var popup_c2de897e52a171d94b1ff92c45c1b974 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0682c9a65033e576dac7949394e09d1c = $(`<div id="html_0682c9a65033e576dac7949394e09d1c" style="width: 100.0%; height: 100.0%;">GANANDAJI TOWN II (49 votes, Outlier Score: 3.192771084337352)</div>`)[0];
+                popup_c2de897e52a171d94b1ff92c45c1b974.setContent(html_0682c9a65033e576dac7949394e09d1c);
+            
+        
+
+        marker_578bdfb11ebc06a7f92b1390de1a3582.bindPopup(popup_c2de897e52a171d94b1ff92c45c1b974)
+        ;
+
+        
+    
+    
+            var marker_ff1abbe2a2a3d16b1c11f34cda65ed0e = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_f8997e03a5b88bcb94351cbec5f22098 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ff1abbe2a2a3d16b1c11f34cda65ed0e.setIcon(icon_f8997e03a5b88bcb94351cbec5f22098);
+        
+    
+        var popup_801ccec95c2bd5735ba140c528360ab1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_11566c327b6bf5b9893c7ef562e0202f = $(`<div id="html_11566c327b6bf5b9893c7ef562e0202f" style="width: 100.0%; height: 100.0%;">ANG. SARKI (11 votes, Outlier Score: 34.80722891566265)</div>`)[0];
+                popup_801ccec95c2bd5735ba140c528360ab1.setContent(html_11566c327b6bf5b9893c7ef562e0202f);
+            
+        
+
+        marker_ff1abbe2a2a3d16b1c11f34cda65ed0e.bindPopup(popup_801ccec95c2bd5735ba140c528360ab1)
+        ;
+
+        
+    
+    
+            var marker_05cebd2f1a1784eaf9a36e2e3e9e3d9a = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_f6079d1deccd215df30f0a8697926a9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_05cebd2f1a1784eaf9a36e2e3e9e3d9a.setIcon(icon_f6079d1deccd215df30f0a8697926a9b);
+        
+    
+        var popup_5887d358dab39a4126c8140c5d23ee41 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc729eec26d8d76e74c78138d33dc45e = $(`<div id="html_dc729eec26d8d76e74c78138d33dc45e" style="width: 100.0%; height: 100.0%;">MAMI COMMUNITY HALL (29 votes, Outlier Score: 16.807228915662648)</div>`)[0];
+                popup_5887d358dab39a4126c8140c5d23ee41.setContent(html_dc729eec26d8d76e74c78138d33dc45e);
+            
+        
+
+        marker_05cebd2f1a1784eaf9a36e2e3e9e3d9a.bindPopup(popup_5887d358dab39a4126c8140c5d23ee41)
+        ;
+
+        
+    
+    
+            var marker_1f65a40d2d9a0e10308a13c076416734 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_d7a3f0c46e7709c13e3ff3061e934855 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1f65a40d2d9a0e10308a13c076416734.setIcon(icon_d7a3f0c46e7709c13e3ff3061e934855);
+        
+    
+        var popup_bdd03dd24205f65be013665f506212b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7178d3733e3bbefe766f2b280eafae4 = $(`<div id="html_e7178d3733e3bbefe766f2b280eafae4" style="width: 100.0%; height: 100.0%;">KARARA VILLAGE (25 votes, Outlier Score: 20.807228915662648)</div>`)[0];
+                popup_bdd03dd24205f65be013665f506212b8.setContent(html_e7178d3733e3bbefe766f2b280eafae4);
+            
+        
+
+        marker_1f65a40d2d9a0e10308a13c076416734.bindPopup(popup_bdd03dd24205f65be013665f506212b8)
+        ;
+
+        
+    
+    
+            var marker_38d056e06501254114d93ac1cf207350 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_526cb94cb31f6c4f548adc7eb8b136dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_38d056e06501254114d93ac1cf207350.setIcon(icon_526cb94cb31f6c4f548adc7eb8b136dd);
+        
+    
+        var popup_c7effc3f9aa90f3e661e6a9b92d7ab96 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc54c014d5bfd4f1e9a524c6939025ab = $(`<div id="html_cc54c014d5bfd4f1e9a524c6939025ab" style="width: 100.0%; height: 100.0%;">LAJAM (1 votes, Outlier Score: 44.80722891566265)</div>`)[0];
+                popup_c7effc3f9aa90f3e661e6a9b92d7ab96.setContent(html_cc54c014d5bfd4f1e9a524c6939025ab);
+            
+        
+
+        marker_38d056e06501254114d93ac1cf207350.bindPopup(popup_c7effc3f9aa90f3e661e6a9b92d7ab96)
+        ;
+
+        
+    
+    
+            var marker_a4d40865c4fa4eb521a511523a01fb32 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_e371056ed844806444320b889a63ba50 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a4d40865c4fa4eb521a511523a01fb32.setIcon(icon_e371056ed844806444320b889a63ba50);
+        
+    
+        var popup_482f382ab6fadcc369103d9dc7f34902 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_565fb6dbd4e2eae91ec09650d9ba0f56 = $(`<div id="html_565fb6dbd4e2eae91ec09650d9ba0f56" style="width: 100.0%; height: 100.0%;">NDING SHWEL (40 votes, Outlier Score: 5.807228915662648)</div>`)[0];
+                popup_482f382ab6fadcc369103d9dc7f34902.setContent(html_565fb6dbd4e2eae91ec09650d9ba0f56);
+            
+        
+
+        marker_a4d40865c4fa4eb521a511523a01fb32.bindPopup(popup_482f382ab6fadcc369103d9dc7f34902)
+        ;
+
+        
+    
+    
+            var marker_2d9ed6915e12a2813bafcd1e1d5e5363 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_29f3f370381e9bdd04d180fdea8964ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2d9ed6915e12a2813bafcd1e1d5e5363.setIcon(icon_29f3f370381e9bdd04d180fdea8964ea);
+        
+    
+        var popup_99b0817860252aa3b3e6a0dc7c7c29f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f6648330b1f76bcd931c4a097b3a8d31 = $(`<div id="html_f6648330b1f76bcd931c4a097b3a8d31" style="width: 100.0%; height: 100.0%;">GABWAT (13 votes, Outlier Score: 32.80722891566265)</div>`)[0];
+                popup_99b0817860252aa3b3e6a0dc7c7c29f0.setContent(html_f6648330b1f76bcd931c4a097b3a8d31);
+            
+        
+
+        marker_2d9ed6915e12a2813bafcd1e1d5e5363.bindPopup(popup_99b0817860252aa3b3e6a0dc7c7c29f0)
+        ;
+
+        
+    
+    
+            var marker_52bf1424dd97adc1e0da2520b4dd3dff = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_a8013fcd12332d8f082a3da943b97177 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_52bf1424dd97adc1e0da2520b4dd3dff.setIcon(icon_a8013fcd12332d8f082a3da943b97177);
+        
+    
+        var popup_ade859a16804d59a5043208cafd78893 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a378b0c62e2bf07f7218393fedf2887 = $(`<div id="html_0a378b0c62e2bf07f7218393fedf2887" style="width: 100.0%; height: 100.0%;">RAYIDI (23 votes, Outlier Score: 22.807228915662648)</div>`)[0];
+                popup_ade859a16804d59a5043208cafd78893.setContent(html_0a378b0c62e2bf07f7218393fedf2887);
+            
+        
+
+        marker_52bf1424dd97adc1e0da2520b4dd3dff.bindPopup(popup_ade859a16804d59a5043208cafd78893)
+        ;
+
+        
+    
+    
+            var marker_c3cf96cf222c5508575301996a572b5a = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_735877f0e1c62c1d48ebd77db9067212 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c3cf96cf222c5508575301996a572b5a.setIcon(icon_735877f0e1c62c1d48ebd77db9067212);
+        
+    
+        var popup_d54e7044bc9114aba63d1a3c80c25a53 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_49d0b590975770677798233a7f4e81cd = $(`<div id="html_49d0b590975770677798233a7f4e81cd" style="width: 100.0%; height: 100.0%;">LEA RAPYAM (50 votes, Outlier Score: 4.192771084337352)</div>`)[0];
+                popup_d54e7044bc9114aba63d1a3c80c25a53.setContent(html_49d0b590975770677798233a7f4e81cd);
+            
+        
+
+        marker_c3cf96cf222c5508575301996a572b5a.bindPopup(popup_d54e7044bc9114aba63d1a3c80c25a53)
+        ;
+
+        
+    
+    
+            var marker_91276c0a6e7d1d932ed100854054c447 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_2a389e9d9e8396f9cc9b0d906c6e943c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_91276c0a6e7d1d932ed100854054c447.setIcon(icon_2a389e9d9e8396f9cc9b0d906c6e943c);
+        
+    
+        var popup_ebf4f9780035ac27e0b8c27f2522f54f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a1605cdceb470316f064adbe63e3c407 = $(`<div id="html_a1605cdceb470316f064adbe63e3c407" style="width: 100.0%; height: 100.0%;">LEA PRI. SCH. RANSHOK (59 votes, Outlier Score: 13.192771084337352)</div>`)[0];
+                popup_ebf4f9780035ac27e0b8c27f2522f54f.setContent(html_a1605cdceb470316f064adbe63e3c407);
+            
+        
+
+        marker_91276c0a6e7d1d932ed100854054c447.bindPopup(popup_ebf4f9780035ac27e0b8c27f2522f54f)
+        ;
+
+        
+    
+    
+            var marker_a35baaa5cfbbe3ef20e607f4396685bc = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_e617676706a53417d4ce738a3b1bb5a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a35baaa5cfbbe3ef20e607f4396685bc.setIcon(icon_e617676706a53417d4ce738a3b1bb5a0);
+        
+    
+        var popup_2fe7a84424760cb459fa6014deff5e4a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_238a2d333dfc55ced0ed5391e789e93e = $(`<div id="html_238a2d333dfc55ced0ed5391e789e93e" style="width: 100.0%; height: 100.0%;">LEA PRI. SCH. KULOSONG (50 votes, Outlier Score: 4.192771084337352)</div>`)[0];
+                popup_2fe7a84424760cb459fa6014deff5e4a.setContent(html_238a2d333dfc55ced0ed5391e789e93e);
+            
+        
+
+        marker_a35baaa5cfbbe3ef20e607f4396685bc.bindPopup(popup_2fe7a84424760cb459fa6014deff5e4a)
+        ;
+
+        
+    
+    
+            var marker_50080766a42e401ac94592f05d87797a = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_4bad54238a16bc80a91e93028b03e943 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_50080766a42e401ac94592f05d87797a.setIcon(icon_4bad54238a16bc80a91e93028b03e943);
+        
+    
+        var popup_a597d1ff7fa713a795d2f4d5f1c1a588 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e0516cdf3b45aaa8f58ff7ad046513d8 = $(`<div id="html_e0516cdf3b45aaa8f58ff7ad046513d8" style="width: 100.0%; height: 100.0%;">KANAKON (64 votes, Outlier Score: 18.192771084337352)</div>`)[0];
+                popup_a597d1ff7fa713a795d2f4d5f1c1a588.setContent(html_e0516cdf3b45aaa8f58ff7ad046513d8);
+            
+        
+
+        marker_50080766a42e401ac94592f05d87797a.bindPopup(popup_a597d1ff7fa713a795d2f4d5f1c1a588)
+        ;
+
+        
+    
+    
+            var marker_84636ba8d15483949a4dd3a947b5ccb5 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_a4671a10a84d3a8940d6ef3731580d7e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_84636ba8d15483949a4dd3a947b5ccb5.setIcon(icon_a4671a10a84d3a8940d6ef3731580d7e);
+        
+    
+        var popup_fc06b6aa4dabd9900139dbd6ab1864f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_89426fd171c325846ad4eb479d667847 = $(`<div id="html_89426fd171c325846ad4eb479d667847" style="width: 100.0%; height: 100.0%;">BWAGAFON (59 votes, Outlier Score: 13.192771084337352)</div>`)[0];
+                popup_fc06b6aa4dabd9900139dbd6ab1864f8.setContent(html_89426fd171c325846ad4eb479d667847);
+            
+        
+
+        marker_84636ba8d15483949a4dd3a947b5ccb5.bindPopup(popup_fc06b6aa4dabd9900139dbd6ab1864f8)
+        ;
+
+        
+    
+    
+            var marker_b82449f16a9241c982be5cb1ae4610d6 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_527a7e33ea8223880fa79785657d2b23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b82449f16a9241c982be5cb1ae4610d6.setIcon(icon_527a7e33ea8223880fa79785657d2b23);
+        
+    
+        var popup_11dc9d8ff7113336b73f2bee82a59d10 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c38d860acf38fd9f2a26e27356fe204d = $(`<div id="html_c38d860acf38fd9f2a26e27356fe204d" style="width: 100.0%; height: 100.0%;">KUSHIK (59 votes, Outlier Score: 13.192771084337352)</div>`)[0];
+                popup_11dc9d8ff7113336b73f2bee82a59d10.setContent(html_c38d860acf38fd9f2a26e27356fe204d);
+            
+        
+
+        marker_b82449f16a9241c982be5cb1ae4610d6.bindPopup(popup_11dc9d8ff7113336b73f2bee82a59d10)
+        ;
+
+        
+    
+    
+            var marker_d744f361a1ce5e1266d14490c1dcf90a = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_f44f228f0adecec51c40d5cdd08f53f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d744f361a1ce5e1266d14490c1dcf90a.setIcon(icon_f44f228f0adecec51c40d5cdd08f53f2);
+        
+    
+        var popup_494aed822b5bf6f6adc4ad23404d2817 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8d487982366ae2642152e491fd99d62 = $(`<div id="html_b8d487982366ae2642152e491fd99d62" style="width: 100.0%; height: 100.0%;">SAGAS (27 votes, Outlier Score: 18.807228915662648)</div>`)[0];
+                popup_494aed822b5bf6f6adc4ad23404d2817.setContent(html_b8d487982366ae2642152e491fd99d62);
+            
+        
+
+        marker_d744f361a1ce5e1266d14490c1dcf90a.bindPopup(popup_494aed822b5bf6f6adc4ad23404d2817)
+        ;
+
+        
+    
+    
+            var marker_2f52e68b8646f42e0189fc1a1214aef6 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_7c51c7a906b6b749ee28e9042460df3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2f52e68b8646f42e0189fc1a1214aef6.setIcon(icon_7c51c7a906b6b749ee28e9042460df3c);
+        
+    
+        var popup_88b8c039f43997ae42dea22747424205 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6aeb17f9fb446c8eddd24308b861b5e = $(`<div id="html_a6aeb17f9fb446c8eddd24308b861b5e" style="width: 100.0%; height: 100.0%;">SHULLUM PRI. SCH. (16 votes, Outlier Score: 29.807228915662648)</div>`)[0];
+                popup_88b8c039f43997ae42dea22747424205.setContent(html_a6aeb17f9fb446c8eddd24308b861b5e);
+            
+        
+
+        marker_2f52e68b8646f42e0189fc1a1214aef6.bindPopup(popup_88b8c039f43997ae42dea22747424205)
+        ;
+
+        
+    
+    
+            var marker_8687ffab248b00395f0eb6aef14d4e51 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_c6110953f946af140bb4b5949a6acb7b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8687ffab248b00395f0eb6aef14d4e51.setIcon(icon_c6110953f946af140bb4b5949a6acb7b);
+        
+    
+        var popup_99f34a36cebd46dfbf47c523c0891b87 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74b3bded91ee96ea71821800730d56b9 = $(`<div id="html_74b3bded91ee96ea71821800730d56b9" style="width: 100.0%; height: 100.0%;">GARA VILLAGE I (80 votes, Outlier Score: 34.19277108433735)</div>`)[0];
+                popup_99f34a36cebd46dfbf47c523c0891b87.setContent(html_74b3bded91ee96ea71821800730d56b9);
+            
+        
+
+        marker_8687ffab248b00395f0eb6aef14d4e51.bindPopup(popup_99f34a36cebd46dfbf47c523c0891b87)
+        ;
+
+        
+    
+    
+            var marker_569d55a0c547120271f0d05b4a3e6387 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_09f765288694153baa3094ad94baab4b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_569d55a0c547120271f0d05b4a3e6387.setIcon(icon_09f765288694153baa3094ad94baab4b);
+        
+    
+        var popup_a4ac83b5a2dfd5548f12d40ec5abd294 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_93bef95882f9a9a4ca6103f9375fe0ae = $(`<div id="html_93bef95882f9a9a4ca6103f9375fe0ae" style="width: 100.0%; height: 100.0%;">CHINAKON / TAGWI (53 votes, Outlier Score: 7.192771084337352)</div>`)[0];
+                popup_a4ac83b5a2dfd5548f12d40ec5abd294.setContent(html_93bef95882f9a9a4ca6103f9375fe0ae);
+            
+        
+
+        marker_569d55a0c547120271f0d05b4a3e6387.bindPopup(popup_a4ac83b5a2dfd5548f12d40ec5abd294)
+        ;
+
+        
+    
+    
+            var marker_1995f3a7d506e1412621c52bdb687123 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_9f4394fb4ef758fcb5d3f186627c6aa2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1995f3a7d506e1412621c52bdb687123.setIcon(icon_9f4394fb4ef758fcb5d3f186627c6aa2);
+        
+    
+        var popup_1f40ab99963d96aa0e28bc7f0131cce9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_23925b1c1f04b39253df67998db079ac = $(`<div id="html_23925b1c1f04b39253df67998db079ac" style="width: 100.0%; height: 100.0%;">LEA PRI. SCH. REBERE (67 votes, Outlier Score: 21.192771084337352)</div>`)[0];
+                popup_1f40ab99963d96aa0e28bc7f0131cce9.setContent(html_23925b1c1f04b39253df67998db079ac);
+            
+        
+
+        marker_1995f3a7d506e1412621c52bdb687123.bindPopup(popup_1f40ab99963d96aa0e28bc7f0131cce9)
+        ;
+
+        
+    
+    
+            var marker_b1033c23468eeecd0b0d51560b5c200f = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_a9fffd44b8783768c70f0f46bc3de6ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b1033c23468eeecd0b0d51560b5c200f.setIcon(icon_a9fffd44b8783768c70f0f46bc3de6ba);
+        
+    
+        var popup_77230a9a86527b8595c6a326bf7bd822 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1dbe0d49c7d1c5349b8a079e61f06d93 = $(`<div id="html_1dbe0d49c7d1c5349b8a079e61f06d93" style="width: 100.0%; height: 100.0%;">SHOMASHAK VILLAGE (44 votes, Outlier Score: 1.8072289156626482)</div>`)[0];
+                popup_77230a9a86527b8595c6a326bf7bd822.setContent(html_1dbe0d49c7d1c5349b8a079e61f06d93);
+            
+        
+
+        marker_b1033c23468eeecd0b0d51560b5c200f.bindPopup(popup_77230a9a86527b8595c6a326bf7bd822)
+        ;
+
+        
+    
+    
+            var marker_d8d34a0037dd05ded1e968c104959b2a = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_fd7b70cf8e846a0a22431d1767c76fc6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d8d34a0037dd05ded1e968c104959b2a.setIcon(icon_fd7b70cf8e846a0a22431d1767c76fc6);
+        
+    
+        var popup_19f355783857848947e3265a42a7e8da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_71593d47c54f89b9680b8a426644fb28 = $(`<div id="html_71593d47c54f89b9680b8a426644fb28" style="width: 100.0%; height: 100.0%;">FANLOH MKT SQUARE (42 votes, Outlier Score: 3.807228915662648)</div>`)[0];
+                popup_19f355783857848947e3265a42a7e8da.setContent(html_71593d47c54f89b9680b8a426644fb28);
+            
+        
+
+        marker_d8d34a0037dd05ded1e968c104959b2a.bindPopup(popup_19f355783857848947e3265a42a7e8da)
+        ;
+
+        
+    
+    
+            var marker_6bc47401c3baa34579acca5ee6cd09ab = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_44cc3205915327fe9db7dd960617295a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6bc47401c3baa34579acca5ee6cd09ab.setIcon(icon_44cc3205915327fe9db7dd960617295a);
+        
+    
+        var popup_4df2283b7eee35a4543c09ee48771f30 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19324cd95afc7af2ce2cdeb6b0fcd97e = $(`<div id="html_19324cd95afc7af2ce2cdeb6b0fcd97e" style="width: 100.0%; height: 100.0%;">LEA PRI. SCH. NTADUK (91 votes, Outlier Score: 45.19277108433735)</div>`)[0];
+                popup_4df2283b7eee35a4543c09ee48771f30.setContent(html_19324cd95afc7af2ce2cdeb6b0fcd97e);
+            
+        
+
+        marker_6bc47401c3baa34579acca5ee6cd09ab.bindPopup(popup_4df2283b7eee35a4543c09ee48771f30)
+        ;
+
+        
+    
+    
+            var marker_1165c4b5980ad50dcce82e50f043a545 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_d6cad06431fd50ed2d4ff277e7300d52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1165c4b5980ad50dcce82e50f043a545.setIcon(icon_d6cad06431fd50ed2d4ff277e7300d52);
+        
+    
+        var popup_8b3885e7a395e33ba381c071cd86ee97 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34051c755a1fe745ebefb30f66a7a528 = $(`<div id="html_34051c755a1fe745ebefb30f66a7a528" style="width: 100.0%; height: 100.0%;">GSS KARA (43 votes, Outlier Score: 2.807228915662648)</div>`)[0];
+                popup_8b3885e7a395e33ba381c071cd86ee97.setContent(html_34051c755a1fe745ebefb30f66a7a528);
+            
+        
+
+        marker_1165c4b5980ad50dcce82e50f043a545.bindPopup(popup_8b3885e7a395e33ba381c071cd86ee97)
+        ;
+
+        
+    
+    
+            var marker_ae8f5c09c92547883c84db547d0a3abd = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_2c8a1925fee0a340cc84949b485154bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ae8f5c09c92547883c84db547d0a3abd.setIcon(icon_2c8a1925fee0a340cc84949b485154bb);
+        
+    
+        var popup_6d79485b438acdb41b0ba9cf4cd0c165 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae728aedcfc2d0882cd06b59fc8c0c80 = $(`<div id="html_ae728aedcfc2d0882cd06b59fc8c0c80" style="width: 100.0%; height: 100.0%;">KUBUNG VILLAGE (8 votes, Outlier Score: 37.80722891566265)</div>`)[0];
+                popup_6d79485b438acdb41b0ba9cf4cd0c165.setContent(html_ae728aedcfc2d0882cd06b59fc8c0c80);
+            
+        
+
+        marker_ae8f5c09c92547883c84db547d0a3abd.bindPopup(popup_6d79485b438acdb41b0ba9cf4cd0c165)
+        ;
+
+        
+    
+    
+            var marker_05e113950efbee86995b51e3a67fcad1 = L.marker(
+                [9.5176185, 8.9097027],
+                {}
+            ).addTo(marker_cluster_e8879b4a5801f1d624d75b5bd9c658d4);
+        
+    
+            var icon_8d5d068f820b08b89eadd0f52e64d423 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_05e113950efbee86995b51e3a67fcad1.setIcon(icon_8d5d068f820b08b89eadd0f52e64d423);
+        
+    
+        var popup_3492e8650d4c48378bd78b3bf1e4dd26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c936b3dba6469833021f3497df7e657 = $(`<div id="html_5c936b3dba6469833021f3497df7e657" style="width: 100.0%; height: 100.0%;">LEA BEK (39 votes, Outlier Score: 6.807228915662648)</div>`)[0];
+                popup_3492e8650d4c48378bd78b3bf1e4dd26.setContent(html_5c936b3dba6469833021f3497df7e657);
+            
+        
+
+        marker_05e113950efbee86995b51e3a67fcad1.bindPopup(popup_3492e8650d4c48378bd78b3bf1e4dd26)
+        ;
+
+        
+    
+</script>
+</html>
